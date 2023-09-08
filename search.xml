@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title></title>
+    <title>Maven</title>
     <url>/2023/09/08/maven/</url>
     <content><![CDATA[<p>仓库：本地仓库，远程仓库（私服），中央仓库</p>
 <h2 id="依赖管理"><a href="#依赖管理" class="headerlink" title="依赖管理"></a>依赖管理</h2><p>坐标：<br>组织名，模块名，版本</p>
@@ -17,9 +17,12 @@
 <p>生命周期的执行实际是由插件完成的。</p>
 <p><img src="https://web-tlias1137.oss-cn-beijing.aliyuncs.com/document/Pasted%20image%2020230906214956.png"></p>
 ]]></content>
+      <tags>
+        <tag>Maven</tag>
+      </tags>
   </entry>
   <entry>
-    <title></title>
+    <title>springboot项目手动构建</title>
     <url>/2023/09/08/springboot-xiang-mu-shou-dong-gou-jian/</url>
     <content><![CDATA[<h1 id="SpringBoot项目-手动构建"><a href="#SpringBoot项目-手动构建" class="headerlink" title="SpringBoot项目-手动构建"></a>SpringBoot项目-手动构建</h1><h2 id="1-创建maven项目"><a href="#1-创建maven项目" class="headerlink" title="1. 创建maven项目"></a>1. 创建maven项目</h2><p>在idea中创建一个maven项目，正常填写项目的坐标信息。如下图所示：</p>
 <p><img src="https://web-tlias1137.oss-cn-beijing.aliyuncs.com/document/image-20221017094402319.png"></p>
@@ -67,6 +70,9 @@
 <p><img src="https://web-tlias1137.oss-cn-beijing.aliyuncs.com/document/image-20221017095239911.png"></p>
 <p>到此呢，我们就手动创建好了这样一个springboot项目~ </p>
 ]]></content>
+      <tags>
+        <tag>Java</tag>
+      </tags>
   </entry>
   <entry>
     <title>springboot原理篇</title>
