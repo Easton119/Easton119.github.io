@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Maven, Hexo">
+    <meta name="keywords" content="maven引入Lombok依赖不生效, Hexo">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Maven | Hexo</title>
+    <title>maven引入Lombok依赖不生效 | Hexo</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -313,12 +313,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Maven</h1>
+                    <h1 class="description center-align post-title">maven引入Lombok依赖不生效</h1>
                 </div>
             </div>
         </div>
@@ -434,8 +434,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Maven/">
-                                <span class="chip bg-color">Maven</span>
+                            <a href="/tags/Java/">
+                                <span class="chip bg-color">Java</span>
                             </a>
                         
                     </div>
@@ -459,7 +459,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    139
+                    130
                 </div>
                 
 
@@ -489,19 +489,36 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>仓库：本地仓库，远程仓库（私服），中央仓库</p>
-<h2 id="依赖管理"><a href="#依赖管理" class="headerlink" title="依赖管理"></a>依赖管理</h2><p>坐标：<br>组织名，模块名，版本</p>
-<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>groupId</span><span class="token punctuation">&gt;</span></span>org.example<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>groupId</span><span class="token punctuation">&gt;</span></span>  
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>artifactId</span><span class="token punctuation">&gt;</span></span>MavenDemo01<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>artifactId</span><span class="token punctuation">&gt;</span></span>  
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>version</span><span class="token punctuation">&gt;</span></span>1.0-SNAPSHOT<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>version</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+                <h2 id="第一种解决方案"><a href="#第一种解决方案" class="headerlink" title="第一种解决方案"></a>第一种解决方案</h2><p>尝试完整引入下面代码：</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token generics"><span class="token punctuation">&lt;</span>build<span class="token punctuation">&gt;</span></span>
+        <span class="token generics"><span class="token punctuation">&lt;</span>plugins<span class="token punctuation">&gt;</span></span>
+            <span class="token generics"><span class="token punctuation">&lt;</span>plugin<span class="token punctuation">&gt;</span></span>
+                <span class="token generics"><span class="token punctuation">&lt;</span>groupId<span class="token punctuation">&gt;</span></span>org<span class="token punctuation">.</span>springframework<span class="token punctuation">.</span>boot<span class="token operator">&lt;</span><span class="token operator">/</span>groupId<span class="token operator">&gt;</span>
+                <span class="token generics"><span class="token punctuation">&lt;</span>artifactId<span class="token punctuation">&gt;</span></span>spring<span class="token operator">-</span>boot<span class="token operator">-</span>maven<span class="token operator">-</span>plugin<span class="token operator">&lt;</span><span class="token operator">/</span>artifactId<span class="token operator">&gt;</span>
+                <span class="token generics"><span class="token punctuation">&lt;</span>configuration<span class="token punctuation">&gt;</span></span>
+                    <span class="token generics"><span class="token punctuation">&lt;</span>excludes<span class="token punctuation">&gt;</span></span>
+                        <span class="token generics"><span class="token punctuation">&lt;</span>exclude<span class="token punctuation">&gt;</span></span>
+                            <span class="token generics"><span class="token punctuation">&lt;</span>groupId<span class="token punctuation">&gt;</span></span>org<span class="token punctuation">.</span>projectlombok<span class="token operator">&lt;</span><span class="token operator">/</span>groupId<span class="token operator">&gt;</span>
+                            <span class="token generics"><span class="token punctuation">&lt;</span>artifactId<span class="token punctuation">&gt;</span></span>lombok<span class="token operator">&lt;</span><span class="token operator">/</span>artifactId<span class="token operator">&gt;</span>
+                        <span class="token operator">&lt;</span><span class="token operator">/</span>exclude<span class="token operator">&gt;</span>
+                    <span class="token operator">&lt;</span><span class="token operator">/</span>excludes<span class="token operator">&gt;</span>
+                <span class="token operator">&lt;</span><span class="token operator">/</span>configuration<span class="token operator">&gt;</span>
+            <span class="token operator">&lt;</span><span class="token operator">/</span>plugin<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span><span class="token operator">/</span>plugins<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>build<span class="token operator">&gt;</span>
+    <span class="token generics"><span class="token punctuation">&lt;</span>dependencies<span class="token punctuation">&gt;</span></span>
+        <span class="token generics"><span class="token punctuation">&lt;</span>dependency<span class="token punctuation">&gt;</span></span>
+            <span class="token generics"><span class="token punctuation">&lt;</span>groupId<span class="token punctuation">&gt;</span></span>org<span class="token punctuation">.</span>projectlombok<span class="token operator">&lt;</span><span class="token operator">/</span>groupId<span class="token operator">&gt;</span>
+            <span class="token generics"><span class="token punctuation">&lt;</span>artifactId<span class="token punctuation">&gt;</span></span>lombok<span class="token operator">&lt;</span><span class="token operator">/</span>artifactId<span class="token operator">&gt;</span>
+            <span class="token generics"><span class="token punctuation">&lt;</span>version<span class="token punctuation">&gt;</span></span><span class="token number">1.18</span><span class="token number">.4</span><span class="token operator">&lt;</span><span class="token operator">/</span>version<span class="token operator">&gt;</span>
+            <span class="token generics"><span class="token punctuation">&lt;</span>scope<span class="token punctuation">&gt;</span></span>provided<span class="token operator">&lt;</span><span class="token operator">/</span>scope<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span><span class="token operator">/</span>dependency<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>dependencies<span class="token operator">&gt;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>maven仓库：<br><a target="_blank" rel="noopener" href="https://mvnrepository.com/">https://mvnrepository.com/</a></p>
-<p><strong>依赖传递</strong><br>排除依赖：指主动断开依赖。exclusions ,exclusion。排除依赖时不需要版本</p>
-<p><strong>依赖范围</strong><br>通过scope设置范围:<br>默认compile，还有test，provided，runtime</p>
-<p><strong>生命周期</strong></p>
-<p>有三套独立的生命周期：clean，default，site</p>
-<p>生命周期的执行实际是由插件完成的。</p>
-<p><img src="https://web-tlias1137.oss-cn-beijing.aliyuncs.com/document/Pasted%20image%2020230906214956.png"></p>
+
+
+
+
 
                 
             </div>
@@ -528,7 +545,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://easton119.github.io/2023/09/08/maven/">https://easton119.github.io/2023/09/08/maven/</a>
+                    <a href="https://easton119.github.io/2023/09/08/maven-yin-ru-lombok-yi-lai-bu-sheng-xiao-copy/">https://easton119.github.io/2023/09/08/maven-yin-ru-lombok-yi-lai-bu-sheng-xiao-copy/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -566,8 +583,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Maven/">
-                                    <span class="chip bg-color">Maven</span>
+                                <a href="/tags/Java/">
+                                    <span class="chip bg-color">Java</span>
                                 </a>
                             
                         </div>
@@ -737,9 +754,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2023/09/08/maven-yin-ru-lombok-yi-lai-bu-sheng-xiao-copy/">
                     <div class="card-image">
@@ -757,9 +775,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-09-08
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-09-08
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -768,6 +786,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -786,13 +805,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2023/09/08/springboot-xiang-mu-shou-dong-gou-jian/">
+                <a href="/2023/09/08/maven/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="springboot项目手动构建">
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="Maven">
                         
-                        <span class="card-title">springboot项目手动构建</span>
+                        <span class="card-title">Maven</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -816,8 +835,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Java/">
-                        <span class="chip bg-color">Java</span>
+                    <a href="/tags/Maven/">
+                        <span class="chip bg-color">Maven</span>
                     </a>
                     
                 </div>
