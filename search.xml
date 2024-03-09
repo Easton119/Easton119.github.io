@@ -70,6 +70,9 @@
 <p><img src="https://web-tlias1137.oss-cn-beijing.aliyuncs.com/document/image-20221017095239911.png"></p>
 <p>到此呢，我们就手动创建好了这样一个springboot项目~ </p>
 ]]></content>
+      <categories>
+        <category>后端</category>
+      </categories>
       <tags>
         <tag>Java</tag>
       </tags>
@@ -80,6 +83,9 @@
     <content><![CDATA[<h1 id="自动配置"><a href="#自动配置" class="headerlink" title="自动配置"></a>自动配置</h1><p>自动配置原理</p>
 <p><img src="https://web-tlias1137.oss-cn-beijing.aliyuncs.com/document/image-20230908111553101.png" alt="image-20230908111553101"></p>
 ]]></content>
+      <categories>
+        <category>后端</category>
+      </categories>
       <tags>
         <tag>Java</tag>
       </tags>
@@ -184,6 +190,9 @@
 <p>web服务器<br>    一个软件程序，对http协议的操作进行封装</p>
 <h2 id="Tomcat"><a href="#Tomcat" class="headerlink" title="Tomcat"></a>Tomcat</h2><p><a href="https://imgse.com/i/pPyspSP"><img src="https://s1.ax1x.com/2023/09/07/pPyspSP.png" alt="tomcat基本使用1"></a><br><a href="https://imgse.com/i/pPysUl6"><img src="https://s1.ax1x.com/2023/09/07/pPysUl6.png" alt="tomcat基本使用2"></a><br><a href="https://imgse.com/i/pPysa6K"><img src="https://s1.ax1x.com/2023/09/07/pPysa6K.png" alt="tomcat基本使用3"></a></p>
 ]]></content>
+      <categories>
+        <category>后端</category>
+      </categories>
       <tags>
         <tag>Java</tag>
       </tags>
@@ -222,6 +231,9 @@
 
 
 ]]></content>
+      <categories>
+        <category>后端</category>
+      </categories>
       <tags>
         <tag>Maven</tag>
       </tags>
