@@ -103,9 +103,9 @@
       </tags>
   </entry>
   <entry>
-    <title>私服配置说明</title>
+    <title>Maven私服配置说明</title>
     <url>/2023/09/08/si-fu-pei-zhi-shuo-ming/</url>
-    <content><![CDATA[<h2 id="私服配置说明"><a href="#私服配置说明" class="headerlink" title="私服配置说明"></a>私服配置说明</h2><p>访问私服：<a href="http://192.168.150.101:8081/">http://192.168.150.101:8081</a></p>
+    <content><![CDATA[<h2 id="Maven私服配置说明"><a href="#Maven私服配置说明" class="headerlink" title="Maven私服配置说明"></a>Maven私服配置说明</h2><p>访问私服：<a href="http://192.168.150.101:8081/">http://192.168.150.101:8081</a></p>
 <p>访问密码：admin/admin</p>
 <p>使用私服，需要在maven的settings.xml配置文件中，做如下配置：</p>
 <ol>
