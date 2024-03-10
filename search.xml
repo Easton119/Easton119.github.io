@@ -531,4 +531,133 @@ step1<span aria-hidden="true" class="line-numbers-rows"><span></span><span></spa
         <tag>Go</tag>
       </tags>
   </entry>
+  <entry>
+    <title>gin框架基础</title>
+    <url>/2024/03/10/gin-kuang-jia-ji-chu/</url>
+    <content><![CDATA[<p><a href="https://www.liwenzhou.com/posts/Go/gin/">Gin框架介绍及使用 - 李文周的博客</a></p>
+<h3 id="安装使用"><a href="#安装使用" class="headerlink" title="安装使用"></a>安装使用</h3><ol>
+<li>首先 go mod init project名称 创建go.mod</li>
+<li>下载安装gin<pre class="line-numbers language-go" data-language="go"><code class="language-go"><span class="token keyword">go</span> get <span class="token operator">-</span>u github<span class="token punctuation">.</span>com<span class="token operator">/</span>gin<span class="token operator">-</span>gonic<span class="token operator">/</span>gin<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
+</ol>
+<h2 id="Gin渲染"><a href="#Gin渲染" class="headerlink" title="Gin渲染"></a>Gin渲染</h2><h3 id="JSON渲染"><a href="#JSON渲染" class="headerlink" title="JSON渲染"></a>JSON渲染</h3><p>示例：<br>注意，在golang中定义结构体时，如果字段名的首字母大写，那么这个字段就是可导出的，即可以在包外访问并修改的，而如果字段名的首字母小写，这个字段就是<strong>不可导出的</strong>。<br>灵活使用 tag 来对结构体字段定制化操作</p>
+<pre class="line-numbers language-go" data-language="go"><code class="language-go"><span class="token keyword">package</span> main
+
+<span class="token keyword">import</span> <span class="token punctuation">(</span>
+	<span class="token string">"net/http"</span>
+	<span class="token string">"github.com/gin-gonic/gin"</span>
+<span class="token punctuation">)</span>
+<span class="token keyword">func</span> <span class="token function">sayHello</span><span class="token punctuation">(</span>c <span class="token operator">*</span>gin<span class="token punctuation">.</span>Context<span class="token punctuation">)</span><span class="token punctuation">{</span>
+	<span class="token comment">// 结构体 ，灵活使用 tag 来对字段定制化操作</span>
+	<span class="token keyword">var</span> data <span class="token keyword">struct</span><span class="token punctuation">{</span>
+		Name <span class="token builtin">string</span> <span class="token string">`json:"name"`</span>
+		Age <span class="token builtin">int</span>
+		Message <span class="token builtin">string</span>
+	<span class="token punctuation">}</span>
+	data<span class="token punctuation">.</span>Age<span class="token operator">=</span><span class="token number">18</span>
+	data<span class="token punctuation">.</span>Name<span class="token operator">=</span><span class="token string">"aaa"</span>
+	data<span class="token punctuation">.</span>Message<span class="token operator">=</span><span class="token string">"123k1j3"</span>
+	<span class="token comment">/* data:=map[string]interface{}{
+		"name":"小王子",
+		"age":18,
+		"message":"hello,golang",
+	} */</span>
+	<span class="token comment">/* c.JSON(200,gin.H{
+		"message":"hello,gin !!",
+	}) */</span>
+	c<span class="token punctuation">.</span><span class="token function">JSON</span><span class="token punctuation">(</span>http<span class="token punctuation">.</span>StatusOK<span class="token punctuation">,</span>data<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	r<span class="token operator">:=</span>gin<span class="token punctuation">.</span><span class="token function">Default</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+	r<span class="token punctuation">.</span><span class="token function">GET</span><span class="token punctuation">(</span><span class="token string">"/hello"</span><span class="token punctuation">,</span>sayHello<span class="token punctuation">)</span>
+	r<span class="token punctuation">.</span><span class="token function">Run</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>gin.H 等同于使用 map的方式</p>
+<h2 id="获取参数"><a href="#获取参数" class="headerlink" title="获取参数"></a>获取参数</h2><h3 id="参数绑定"><a href="#参数绑定" class="headerlink" title="参数绑定"></a>参数绑定</h3><p>c.ShouldBind(&amp;loginInfo)</p>
+<pre class="line-numbers language-go" data-language="go"><code class="language-go"><span class="token keyword">type</span> userInfo <span class="token keyword">struct</span><span class="token punctuation">{</span>
+	User		<span class="token builtin">string</span> <span class="token string">`form:"user" json:"user" binding:"required"`</span>
+	Password	<span class="token builtin">string</span> <span class="token string">`form:"password" json:"password" binding:"required"`</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">func</span> <span class="token function">getUserinfo</span><span class="token punctuation">(</span>c <span class="token operator">*</span>gin<span class="token punctuation">.</span>Context<span class="token punctuation">)</span><span class="token punctuation">{</span>
+	<span class="token keyword">var</span> loginInfo userInfo
+	err<span class="token operator">:=</span>c<span class="token punctuation">.</span><span class="token function">ShouldBind</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>loginInfo<span class="token punctuation">)</span>
+	<span class="token keyword">if</span> err<span class="token operator">!=</span><span class="token boolean">nil</span> <span class="token punctuation">{</span>
+		c<span class="token punctuation">.</span><span class="token function">JSON</span><span class="token punctuation">(</span>http<span class="token punctuation">.</span>StatusBadRequest<span class="token punctuation">,</span>gin<span class="token punctuation">.</span>H<span class="token punctuation">{</span>
+			<span class="token string">"err"</span><span class="token punctuation">:</span>err<span class="token punctuation">,</span>
+		<span class="token punctuation">}</span><span class="token punctuation">)</span>
+	<span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+		c<span class="token punctuation">.</span><span class="token function">JSON</span><span class="token punctuation">(</span>http<span class="token punctuation">.</span>StatusOK<span class="token punctuation">,</span>loginInfo<span class="token punctuation">)</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	r<span class="token operator">:=</span>gin<span class="token punctuation">.</span><span class="token function">Default</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+	r<span class="token punctuation">.</span><span class="token function">GET</span><span class="token punctuation">(</span><span class="token string">"/hello/:username/:address"</span><span class="token punctuation">,</span>sayHello<span class="token punctuation">)</span>
+	r<span class="token punctuation">.</span><span class="token function">GET</span><span class="token punctuation">(</span><span class="token string">"/login"</span><span class="token punctuation">,</span>getUserinfo<span class="token punctuation">)</span>
+	r<span class="token punctuation">.</span><span class="token function">Run</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h1 id="gorm使用"><a href="#gorm使用" class="headerlink" title="gorm使用"></a>gorm使用</h1><p>下列使用了mysql数据库，<br>首先要先<br>go get gorm.io/driver/mysql<br>go get gorm.io/gorm</p>
+<pre class="line-numbers language-go" data-language="go"><code class="language-go"><span class="token keyword">package</span> main
+
+<span class="token keyword">import</span> <span class="token punctuation">(</span>
+	<span class="token string">"fmt"</span>
+	<span class="token string">"gorm.io/driver/mysql"</span>
+	<span class="token string">"gorm.io/gorm"</span>
+<span class="token punctuation">)</span>
+<span class="token keyword">type</span> UserInfo <span class="token keyword">struct</span><span class="token punctuation">{</span>
+	ID <span class="token builtin">int</span>
+	Name <span class="token builtin">string</span>
+	Address <span class="token builtin">string</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	dsn <span class="token operator">:=</span> <span class="token string">"root:123456@tcp(127.0.0.1:3306)/db01?charset=utf8mb4&amp;parseTime=True&amp;loc=Local"</span>
+	db<span class="token punctuation">,</span> err <span class="token operator">:=</span> gorm<span class="token punctuation">.</span><span class="token function">Open</span><span class="token punctuation">(</span>mysql<span class="token punctuation">.</span><span class="token function">Open</span><span class="token punctuation">(</span>dsn<span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token operator">&amp;</span>gorm<span class="token punctuation">.</span>Config<span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+	<span class="token comment">// db,err:=sql.Open("mysql",dsn)</span>
+	<span class="token keyword">if</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span>
+		<span class="token function">panic</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span>
+	<span class="token punctuation">}</span>
+	<span class="token comment">//自动迁移</span>
+	db<span class="token punctuation">.</span><span class="token function">AutoMigrate</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>UserInfo<span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+	<span class="token comment">//创建数据行</span>
+	<span class="token comment">// u1:=UserInfo{2,"xig","beijing"}</span>
+	<span class="token comment">// db.Create(&amp;u1)</span>
+	<span class="token comment">//查询	</span>
+	<span class="token keyword">var</span> u UserInfo
+	db<span class="token punctuation">.</span><span class="token function">First</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>u<span class="token punctuation">)</span><span class="token comment">//表中的第一条数据保存到u中</span>
+	fmt<span class="token punctuation">.</span><span class="token function">Printf</span><span class="token punctuation">(</span><span class="token string">"u: %#v\n"</span><span class="token punctuation">,</span> u<span class="token punctuation">)</span>
+	<span class="token comment">//更新</span>
+	db<span class="token punctuation">.</span><span class="token function">Model</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>u<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">Update</span><span class="token punctuation">(</span><span class="token string">"Address"</span><span class="token punctuation">,</span><span class="token string">"shanghai"</span><span class="token punctuation">)</span>
+	<span class="token comment">//删除</span>
+	db<span class="token punctuation">.</span><span class="token function">Delete</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>u<span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="gorm创建记录及字段默认值"><a href="#gorm创建记录及字段默认值" class="headerlink" title="gorm创建记录及字段默认值"></a>gorm创建记录及字段默认值</h4><p>如果是零值，数据库会默认忽略。<br>可以使用指针或 Scanner/Value接口</p>
+<pre class="line-numbers language-go" data-language="go"><code class="language-go"><span class="token comment">// 使用指针</span>
+<span class="token keyword">type</span> User <span class="token keyword">struct</span> <span class="token punctuation">{</span>
+  ID   <span class="token builtin">int64</span>
+  Name <span class="token operator">*</span><span class="token builtin">string</span> <span class="token string">`gorm:"default:'小王子'"`</span>
+  Age  <span class="token builtin">int64</span>
+<span class="token punctuation">}</span>
+user <span class="token operator">:=</span> User<span class="token punctuation">{</span>Name<span class="token punctuation">:</span> <span class="token function">new</span><span class="token punctuation">(</span><span class="token builtin">string</span><span class="token punctuation">)</span><span class="token punctuation">,</span> Age<span class="token punctuation">:</span> <span class="token number">18</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">}</span>
+db<span class="token punctuation">.</span><span class="token function">Create</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>user<span class="token punctuation">)</span>  <span class="token comment">// 此时数据库中该条记录name字段的值就是''</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-go" data-language="go"><code class="language-go"><span class="token comment">// 使用 Scanner/Valuer</span>
+<span class="token keyword">type</span> User <span class="token keyword">struct</span> <span class="token punctuation">{</span>
+	ID <span class="token builtin">int64</span>
+	Name sql<span class="token punctuation">.</span>NullString <span class="token string">`gorm:"default:'小王子'"`</span> <span class="token comment">// sql.NullString 实现了Scanner/Valuer接口</span>
+	Age  <span class="token builtin">int64</span>
+<span class="token punctuation">}</span>
+user <span class="token operator">:=</span> User<span class="token punctuation">{</span>Name<span class="token punctuation">:</span> sql<span class="token punctuation">.</span>NullString<span class="token punctuation">{</span><span class="token string">""</span><span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">}</span><span class="token punctuation">,</span> Age<span class="token punctuation">:</span><span class="token number">18</span><span class="token punctuation">}</span>
+db<span class="token punctuation">.</span><span class="token function">Create</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>user<span class="token punctuation">)</span>  <span class="token comment">// 此时数据库中该条记录name字段的值就是''</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>tips：在操作前加上 .Debug()可以打印出sql语句</p>
+]]></content>
+      <categories>
+        <category>后端</category>
+        <category>Go</category>
+      </categories>
+      <tags>
+        <tag>Go</tag>
+      </tags>
+  </entry>
 </search>
