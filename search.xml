@@ -1,51 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Maven</title>
-    <url>/2023/09/08/maven/</url>
-    <content><![CDATA[<p>仓库：本地仓库，远程仓库（私服），中央仓库</p>
-<h2 id="依赖管理"><a href="#依赖管理" class="headerlink" title="依赖管理"></a>依赖管理</h2><p>坐标：<br>组织名，模块名，版本</p>
-<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>groupId</span><span class="token punctuation">&gt;</span></span>org.example<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>groupId</span><span class="token punctuation">&gt;</span></span>  
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>artifactId</span><span class="token punctuation">&gt;</span></span>MavenDemo01<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>artifactId</span><span class="token punctuation">&gt;</span></span>  
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>version</span><span class="token punctuation">&gt;</span></span>1.0-SNAPSHOT<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>version</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
-<p>maven仓库：<br><a href="https://mvnrepository.com/">https://mvnrepository.com/</a></p>
-<p><strong>依赖传递</strong><br>排除依赖：指主动断开依赖。exclusions ,exclusion。排除依赖时不需要版本</p>
-<p><strong>依赖范围</strong><br>通过scope设置范围:<br>默认compile，还有test，provided，runtime</p>
-<p><strong>生命周期</strong></p>
-<p>有三套独立的生命周期：clean，default，site</p>
-<p>生命周期的执行实际是由插件完成的。</p>
-<p><img src="https://web-tlias1137.oss-cn-beijing.aliyuncs.com/document/Pasted%20image%2020230906214956.png"></p>
-]]></content>
-      <tags>
-        <tag>Maven</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>New Start</title>
-    <url>/2024/03/09/new-start/</url>
-    <content><![CDATA[<p>春水方生，尘土扬，</p>
-<p>此时当是，</p>
-<p>乘风好去，长空万里，直下看山河</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>springboot入门</title>
-    <url>/2023/09/07/springboot-ru-men/</url>
-    <content><![CDATA[<h1 id="入门"><a href="#入门" class="headerlink" title="入门"></a>入门</h1><p>创建时勾选 spring web</p>
-<p>有时候需要缓存 invalidate caches/restart</p>
-<h2 id="Http协议"><a href="#Http协议" class="headerlink" title="Http协议"></a>Http协议</h2><p>请求协议：<br>    请求行<br>    请求头<br>    请求体</p>
-<p>web服务器<br>    一个软件程序，对http协议的操作进行封装</p>
-<h2 id="Tomcat"><a href="#Tomcat" class="headerlink" title="Tomcat"></a>Tomcat</h2><p><a href="https://imgse.com/i/pPyspSP"><img src="https://s1.ax1x.com/2023/09/07/pPyspSP.png" alt="tomcat基本使用1"></a><br><a href="https://imgse.com/i/pPysUl6"><img src="https://s1.ax1x.com/2023/09/07/pPysUl6.png" alt="tomcat基本使用2"></a><br><a href="https://imgse.com/i/pPysa6K"><img src="https://s1.ax1x.com/2023/09/07/pPysa6K.png" alt="tomcat基本使用3"></a></p>
-]]></content>
-      <categories>
-        <category>后端</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>springboot项目手动构建</title>
     <url>/2023/09/08/springboot-xiang-mu-shou-dong-gou-jian/</url>
     <content><![CDATA[<h1 id="SpringBoot项目-手动构建"><a href="#SpringBoot项目-手动构建" class="headerlink" title="SpringBoot项目-手动构建"></a>SpringBoot项目-手动构建</h1><h2 id="1-创建maven项目"><a href="#1-创建maven项目" class="headerlink" title="1. 创建maven项目"></a>1. 创建maven项目</h2><p>在idea中创建一个maven项目，正常填写项目的坐标信息。如下图所示：</p>
@@ -102,6 +57,51 @@
       </tags>
   </entry>
   <entry>
+    <title>Maven</title>
+    <url>/2023/09/08/maven/</url>
+    <content><![CDATA[<p>仓库：本地仓库，远程仓库（私服），中央仓库</p>
+<h2 id="依赖管理"><a href="#依赖管理" class="headerlink" title="依赖管理"></a>依赖管理</h2><p>坐标：<br>组织名，模块名，版本</p>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>groupId</span><span class="token punctuation">&gt;</span></span>org.example<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>groupId</span><span class="token punctuation">&gt;</span></span>  
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>artifactId</span><span class="token punctuation">&gt;</span></span>MavenDemo01<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>artifactId</span><span class="token punctuation">&gt;</span></span>  
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>version</span><span class="token punctuation">&gt;</span></span>1.0-SNAPSHOT<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>version</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p>maven仓库：<br><a href="https://mvnrepository.com/">https://mvnrepository.com/</a></p>
+<p><strong>依赖传递</strong><br>排除依赖：指主动断开依赖。exclusions ,exclusion。排除依赖时不需要版本</p>
+<p><strong>依赖范围</strong><br>通过scope设置范围:<br>默认compile，还有test，provided，runtime</p>
+<p><strong>生命周期</strong></p>
+<p>有三套独立的生命周期：clean，default，site</p>
+<p>生命周期的执行实际是由插件完成的。</p>
+<p><img src="https://web-tlias1137.oss-cn-beijing.aliyuncs.com/document/Pasted%20image%2020230906214956.png"></p>
+]]></content>
+      <tags>
+        <tag>Maven</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>New Start</title>
+    <url>/2024/03/09/new-start/</url>
+    <content><![CDATA[<p>春水方生，尘土扬，</p>
+<p>此时当是，</p>
+<p>乘风好去，长空万里，直下看山河</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>springboot入门</title>
+    <url>/2023/09/07/springboot-ru-men/</url>
+    <content><![CDATA[<h1 id="入门"><a href="#入门" class="headerlink" title="入门"></a>入门</h1><p>创建时勾选 spring web</p>
+<p>有时候需要缓存 invalidate caches/restart</p>
+<h2 id="Http协议"><a href="#Http协议" class="headerlink" title="Http协议"></a>Http协议</h2><p>请求协议：<br>    请求行<br>    请求头<br>    请求体</p>
+<p>web服务器<br>    一个软件程序，对http协议的操作进行封装</p>
+<h2 id="Tomcat"><a href="#Tomcat" class="headerlink" title="Tomcat"></a>Tomcat</h2><p><a href="https://imgse.com/i/pPyspSP"><img src="https://s1.ax1x.com/2023/09/07/pPyspSP.png" alt="tomcat基本使用1"></a><br><a href="https://imgse.com/i/pPysUl6"><img src="https://s1.ax1x.com/2023/09/07/pPysUl6.png" alt="tomcat基本使用2"></a><br><a href="https://imgse.com/i/pPysa6K"><img src="https://s1.ax1x.com/2023/09/07/pPysa6K.png" alt="tomcat基本使用3"></a></p>
+]]></content>
+      <categories>
+        <category>后端</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>maven引入Lombok依赖不生效</title>
     <url>/2023/09/08/maven-yin-ru-lombok-yi-lai-bu-sheng-xiao-copy/</url>
     <content><![CDATA[<h2 id="第一种解决方案"><a href="#第一种解决方案" class="headerlink" title="第一种解决方案"></a>第一种解决方案</h2><p>尝试完整引入下面代码：</p>
@@ -140,6 +140,20 @@
       </categories>
       <tags>
         <tag>Maven</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>springboot原理篇</title>
+    <url>/2023/09/08/springboot-yuan-li-pian/</url>
+    <content><![CDATA[<h1 id="自动配置"><a href="#自动配置" class="headerlink" title="自动配置"></a>自动配置</h1><p>自动配置原理</p>
+<p><img src="https://web-tlias1137.oss-cn-beijing.aliyuncs.com/document/image-20230908111553101.png" alt="image-20230908111553101"></p>
+]]></content>
+      <categories>
+        <category>后端</category>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
       </tags>
   </entry>
   <entry>
@@ -231,20 +245,6 @@
 ]]></content>
       <tags>
         <tag>Maven</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>springboot原理篇</title>
-    <url>/2023/09/08/springboot-yuan-li-pian/</url>
-    <content><![CDATA[<h1 id="自动配置"><a href="#自动配置" class="headerlink" title="自动配置"></a>自动配置</h1><p>自动配置原理</p>
-<p><img src="https://web-tlias1137.oss-cn-beijing.aliyuncs.com/document/image-20230908111553101.png" alt="image-20230908111553101"></p>
-]]></content>
-      <categories>
-        <category>后端</category>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
       </tags>
   </entry>
 </search>
