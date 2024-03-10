@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>New Start</title>
-    <url>/2024/03/09/new-start/</url>
-    <content><![CDATA[<p>春水方生，尘土扬，</p>
-<p>此时当是，</p>
-<p>乘风好去，长空万里，直下看山河</p>
-]]></content>
-  </entry>
-  <entry>
     <title>springboot项目手动构建</title>
     <url>/2023/09/08/springboot-xiang-mu-shou-dong-gou-jian/</url>
     <content><![CDATA[<h1 id="SpringBoot项目-手动构建"><a href="#SpringBoot项目-手动构建" class="headerlink" title="SpringBoot项目-手动构建"></a>SpringBoot项目-手动构建</h1><h2 id="1-创建maven项目"><a href="#1-创建maven项目" class="headerlink" title="1. 创建maven项目"></a>1. 创建maven项目</h2><p>在idea中创建一个maven项目，正常填写项目的坐标信息。如下图所示：</p>
@@ -84,6 +76,14 @@
       <tags>
         <tag>Maven</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>New Start</title>
+    <url>/2024/03/09/new-start/</url>
+    <content><![CDATA[<p>春水方生，尘土扬，</p>
+<p>此时当是，</p>
+<p>乘风好去，长空万里，直下看山河</p>
+]]></content>
   </entry>
   <entry>
     <title>maven引入Lombok依赖不生效</title>
