@@ -86,36 +86,6 @@
       </tags>
   </entry>
   <entry>
-    <title>springboot原理篇</title>
-    <url>/2023/09/08/springboot-yuan-li-pian/</url>
-    <content><![CDATA[<h1 id="自动配置"><a href="#自动配置" class="headerlink" title="自动配置"></a>自动配置</h1><p>自动配置原理</p>
-<p><img src="https://web-tlias1137.oss-cn-beijing.aliyuncs.com/document/image-20230908111553101.png" alt="image-20230908111553101"></p>
-]]></content>
-      <categories>
-        <category>后端</category>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>springboot入门</title>
-    <url>/2023/09/07/springboot-ru-men/</url>
-    <content><![CDATA[<h1 id="入门"><a href="#入门" class="headerlink" title="入门"></a>入门</h1><p>创建时勾选 spring web</p>
-<p>有时候需要缓存 invalidate caches/restart</p>
-<h2 id="Http协议"><a href="#Http协议" class="headerlink" title="Http协议"></a>Http协议</h2><p>请求协议：<br>    请求行<br>    请求头<br>    请求体</p>
-<p>web服务器<br>    一个软件程序，对http协议的操作进行封装</p>
-<h2 id="Tomcat"><a href="#Tomcat" class="headerlink" title="Tomcat"></a>Tomcat</h2><p><a href="https://imgse.com/i/pPyspSP"><img src="https://s1.ax1x.com/2023/09/07/pPyspSP.png" alt="tomcat基本使用1"></a><br><a href="https://imgse.com/i/pPysUl6"><img src="https://s1.ax1x.com/2023/09/07/pPysUl6.png" alt="tomcat基本使用2"></a><br><a href="https://imgse.com/i/pPysa6K"><img src="https://s1.ax1x.com/2023/09/07/pPysa6K.png" alt="tomcat基本使用3"></a></p>
-]]></content>
-      <categories>
-        <category>后端</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>maven引入Lombok依赖不生效</title>
     <url>/2023/09/08/maven-yin-ru-lombok-yi-lai-bu-sheng-xiao-copy/</url>
     <content><![CDATA[<h2 id="第一种解决方案"><a href="#第一种解决方案" class="headerlink" title="第一种解决方案"></a>第一种解决方案</h2><p>尝试完整引入下面代码：</p>
@@ -154,6 +124,36 @@
       </categories>
       <tags>
         <tag>Maven</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>springboot入门</title>
+    <url>/2023/09/07/springboot-ru-men/</url>
+    <content><![CDATA[<h1 id="入门"><a href="#入门" class="headerlink" title="入门"></a>入门</h1><p>创建时勾选 spring web</p>
+<p>有时候需要缓存 invalidate caches/restart</p>
+<h2 id="Http协议"><a href="#Http协议" class="headerlink" title="Http协议"></a>Http协议</h2><p>请求协议：<br>    请求行<br>    请求头<br>    请求体</p>
+<p>web服务器<br>    一个软件程序，对http协议的操作进行封装</p>
+<h2 id="Tomcat"><a href="#Tomcat" class="headerlink" title="Tomcat"></a>Tomcat</h2><p><a href="https://imgse.com/i/pPyspSP"><img src="https://s1.ax1x.com/2023/09/07/pPyspSP.png" alt="tomcat基本使用1"></a><br><a href="https://imgse.com/i/pPysUl6"><img src="https://s1.ax1x.com/2023/09/07/pPysUl6.png" alt="tomcat基本使用2"></a><br><a href="https://imgse.com/i/pPysa6K"><img src="https://s1.ax1x.com/2023/09/07/pPysa6K.png" alt="tomcat基本使用3"></a></p>
+]]></content>
+      <categories>
+        <category>后端</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>springboot原理篇</title>
+    <url>/2023/09/08/springboot-yuan-li-pian/</url>
+    <content><![CDATA[<h1 id="自动配置"><a href="#自动配置" class="headerlink" title="自动配置"></a>自动配置</h1><p>自动配置原理</p>
+<p><img src="https://web-tlias1137.oss-cn-beijing.aliyuncs.com/document/image-20230908111553101.png" alt="image-20230908111553101"></p>
+]]></content>
+      <categories>
+        <category>后端</category>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
       </tags>
   </entry>
   <entry>
