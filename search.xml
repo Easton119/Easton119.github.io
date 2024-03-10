@@ -660,4 +660,94 @@ db<span class="token punctuation">.</span><span class="token function">Create</s
         <tag>Go</tag>
       </tags>
   </entry>
+  <entry>
+    <title>New Start</title>
+    <url>/2024/03/09/redis/</url>
+    <content><![CDATA[<h1 id="安装与启动"><a href="#安装与启动" class="headerlink" title="安装与启动"></a>安装与启动</h1><p><a href="https://blog.csdn.net/qq_43948440/article/details/110076492">win10环境Redis安装及配置，以及Redis服务无法启动的解决方法_redis此应用无法在你的电脑上运行-CSDN博客</a></p>
+<p>密码设置：<br>requirepass 123456<br>启动redis-server :   redis-server.exe redis.windows.conf<br>启动redis-cli： redis-cli.exe -h 127.0.0.1 -p 6379<br>输入密码 auth 123456</p>
+<h1 id="操作命令"><a href="#操作命令" class="headerlink" title="操作命令"></a>操作命令</h1><p>key- value<br>value有五种基本数据类型：字符串，哈希 hash，列表list , 集合 set , 有序集合 sorted set</p>
+<p>可以在启动redis-cli时加上 –raw ，使得查看的值为原始值，这样中文不会被转成二进制显示<br><strong>string操作命令：</strong><br>SET key value<br>GET key<br>SETEX key seconds value 设置key的值，过期时间设置为seconds<br>SETNX key value 只有当key不存在时设置key的值</p>
+<p><strong>hash：</strong><br><img src="https://cdn.nlark.com/yuque/0/2023/png/28230850/1700824839007-b246e391-eadb-4439-80d1-be43c6918861.png#averageHue=%23f3f0f3&amp;clientId=ua6f08345-7b10-4&amp;from=paste&amp;height=355&amp;id=u4936e701&amp;originHeight=533&amp;originWidth=1226&amp;originalType=binary&amp;ratio=1.5&amp;rotation=0&amp;showTitle=false&amp;size=210543&amp;status=done&amp;style=none&amp;taskId=u2cb12b0b-90f3-4af0-9f0b-339f6693005&amp;title=&amp;width=817.3333333333334" alt="image.png"></p>
+<p><strong>list：</strong><br><img src="https://cdn.nlark.com/yuque/0/2023/png/28230850/1700826888405-5237320f-1d4a-4a1b-9f17-adcd5e9c0355.png#averageHue=%23f5f3f5&amp;clientId=ua6f08345-7b10-4&amp;from=paste&amp;height=362&amp;id=ud33b9df8&amp;originHeight=543&amp;originWidth=1375&amp;originalType=binary&amp;ratio=1.5&amp;rotation=0&amp;showTitle=false&amp;size=188850&amp;status=done&amp;style=none&amp;taskId=ua8cbbbde-f91a-4d36-843a-2eef1e28ad9&amp;title=&amp;width=916.6666666666666" alt="image.png"></p>
+<p><strong>集合set</strong><br><img src="https://cdn.nlark.com/yuque/0/2023/png/28230850/1700827267902-1687ca20-5606-45d0-8b33-7dfda95551f3.png#averageHue=%23f5f3f5&amp;clientId=ua6f08345-7b10-4&amp;from=paste&amp;height=425&amp;id=u0721d475&amp;originHeight=637&amp;originWidth=1291&amp;originalType=binary&amp;ratio=1.5&amp;rotation=0&amp;showTitle=false&amp;size=213711&amp;status=done&amp;style=none&amp;taskId=uf09e0184-3d9b-43e0-9cb9-317eea52fb1&amp;title=&amp;width=860.6666666666666" alt="image.png"></p>
+<p>有序集合<br><img src="https://cdn.nlark.com/yuque/0/2023/png/28230850/1700828076794-eb2d2624-d09d-4634-a2a5-fb2625a7e5de.png#averageHue=%23f3f1f3&amp;clientId=ua6f08345-7b10-4&amp;from=paste&amp;height=355&amp;id=ua1437128&amp;originHeight=532&amp;originWidth=1095&amp;originalType=binary&amp;ratio=1.5&amp;rotation=0&amp;showTitle=false&amp;size=233212&amp;status=done&amp;style=none&amp;taskId=u7a97790b-2ec6-4603-b904-13b209ed20f&amp;title=&amp;width=730" alt="image.png"></p>
+<p>redis通用命令：<br>keys pattern<br>exists key<br>type key<br>ttl key 返回给定key的剩余生存时间(ttl ,  time to live) , 以秒为单位<br>del key</p>
+<h1 id="Java中操作redis"><a href="#Java中操作redis" class="headerlink" title="Java中操作redis"></a>Java中操作redis</h1><h2 id="Jedis"><a href="#Jedis" class="headerlink" title="Jedis"></a>Jedis</h2><p>引入jedis-client依赖</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token annotation punctuation">@Test</span>
+<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">testJedis</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token class-name">Jedis</span> jedis <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Jedis</span><span class="token punctuation">(</span><span class="token string">"localhost"</span><span class="token punctuation">,</span> <span class="token number">6379</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    jedis<span class="token punctuation">.</span><span class="token function">auth</span><span class="token punctuation">(</span><span class="token string">"123456"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    jedis<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token string">"username"</span><span class="token punctuation">,</span><span class="token string">"qiyijin"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token class-name">String</span> username <span class="token operator">=</span> jedis<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">"username"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>username<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    jedis<span class="token punctuation">.</span><span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="springboot-starter-data-redis"><a href="#springboot-starter-data-redis" class="headerlink" title="springboot-starter-data-redis"></a>springboot-starter-data-redis</h2><p>导入依赖</p>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dependency</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>groupId</span><span class="token punctuation">&gt;</span></span>org.springframework.boot<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>groupId</span><span class="token punctuation">&gt;</span></span>x
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>artifactId</span><span class="token punctuation">&gt;</span></span>spring-boot-starter-data-redis<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>artifactId</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>version</span><span class="token punctuation">&gt;</span></span>3.1.5<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>version</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dependency</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>redis相关配置</p>
+<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token comment"># Redis相关配置</span>
+<span class="token key atrule">redis</span><span class="token punctuation">:</span>
+<span class="token key atrule">host</span><span class="token punctuation">:</span> localhost
+<span class="token key atrule">port</span><span class="token punctuation">:</span> <span class="token number">6379</span>
+<span class="token key atrule">password</span><span class="token punctuation">:</span> <span class="token number">123456</span>
+<span class="token comment"># 第0号数据库</span>
+<span class="token key atrule">database</span><span class="token punctuation">:</span> <span class="token number">0</span>
+<span class="token key atrule">jedis</span><span class="token punctuation">:</span>
+<span class="token comment">#Redis连接池配置</span>
+<span class="token key atrule">pool</span><span class="token punctuation">:</span>
+<span class="token key atrule">max-active</span><span class="token punctuation">:</span> <span class="token number">8</span>
+<span class="token key atrule">max-wait</span><span class="token punctuation">:</span> 1ms
+<span class="token key atrule">max-idle</span><span class="token punctuation">:</span> <span class="token number">4</span>
+<span class="token key atrule">min-idle</span><span class="token punctuation">:</span> <span class="token number">0</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>redis的测试方法</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token annotation punctuation">@Autowired</span>
+<span class="token keyword">private</span> <span class="token class-name">RedisTemplate</span> redisTemplate<span class="token punctuation">;</span>
+<span class="token comment">/**
+ * 注意在测试spring-boot-starter-data-redis的时候需要在类上加下面的注解
+ * @SpringBootTest
+ * @RunWith(SpringRunner.class)
+ */</span>
+<span class="token annotation punctuation">@Test</span>
+<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">testString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    redisTemplate<span class="token punctuation">.</span><span class="token function">opsForValue</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token string">"myMeetingName123"</span><span class="token punctuation">,</span><span class="token string">"imms"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token class-name">String</span> val <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">)</span> redisTemplate<span class="token punctuation">.</span><span class="token function">opsForValue</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">"myMeetingName123"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>val<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>redis的config配置类</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token annotation punctuation">@Configuration</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">RedisConfig</span> <span class="token keyword">extends</span> <span class="token class-name">CachingConfigurerSupport</span> <span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@Bean</span>
+    <span class="token keyword">public</span> <span class="token class-name">RedisTemplate</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Object</span><span class="token punctuation">,</span><span class="token class-name">Object</span><span class="token punctuation">&gt;</span></span> <span class="token function">redisTemplate</span><span class="token punctuation">(</span><span class="token class-name">RedisConnectionFactory</span> connectionFactory<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token class-name">RedisTemplate</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Object</span><span class="token punctuation">,</span> <span class="token class-name">Object</span><span class="token punctuation">&gt;</span></span> redisTemplate <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">RedisTemplate</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">//默认的Key序列化器为：JdkSerializationRedisSerializer</span>
+        redisTemplate<span class="token punctuation">.</span><span class="token function">setKeySerializer</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">StringRedisSerializer</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        redisTemplate<span class="token punctuation">.</span><span class="token function">setHashKeySerializer</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">StringRedisSerializer</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        redisTemplate<span class="token punctuation">.</span><span class="token function">setConnectionFactory</span><span class="token punctuation">(</span>connectionFactory<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> redisTemplate<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+<h1 id="redis线程模型"><a href="#redis线程模型" class="headerlink" title="redis线程模型"></a>redis线程模型</h1><p>redis采用单线程为什么还这么快？</p>
+<ol>
+<li>在内存中运行</li>
+<li>避免了多线程之间的竞争</li>
+<li>采用了I/O多路复用机制</li>
+</ol>
+]]></content>
+      <categories>
+        <category>后端</category>
+        <category>redis</category>
+      </categories>
+      <tags>
+        <tag>redis</tag>
+      </tags>
+  </entry>
 </search>
