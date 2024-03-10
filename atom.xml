@@ -6,7 +6,7 @@
   <link href="https://easton119.github.io/atom.xml" rel="self"/>
   
   <link href="https://easton119.github.io/"/>
-  <updated>2024-03-10T15:30:29.702Z</updated>
+  <updated>2024-03-10T15:51:15.685Z</updated>
   <id>https://easton119.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Redis基础</title>
+    <link href="https://easton119.github.io/2024/03/10/redis/"/>
+    <id>https://easton119.github.io/2024/03/10/redis/</id>
+    <published>2024-03-10T15:43:49.299Z</published>
+    <updated>2024-03-10T15:51:15.685Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;安装与启动&quot;&gt;&lt;a href=&quot;#安装与启动&quot; class=&quot;headerlink&quot; title=&quot;安装与启动&quot;&gt;&lt;/a&gt;安装与启动&lt;/h1&gt;&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="后端" scheme="https://easton119.github.io/categories/%E5%90%8E%E7%AB%AF/"/>
+    
+    <category term="redis" scheme="https://easton119.github.io/categories/%E5%90%8E%E7%AB%AF/redis/"/>
+    
+    
+    <category term="redis" scheme="https://easton119.github.io/tags/redis/"/>
+    
+  </entry>
   
   <entry>
     <title>gin框架基础</title>
@@ -118,33 +145,6 @@
     
     
     
-    
-  </entry>
-  
-  <entry>
-    <title>New Start</title>
-    <link href="https://easton119.github.io/2024/03/09/redis/"/>
-    <id>https://easton119.github.io/2024/03/09/redis/</id>
-    <published>2024-03-09T15:36:25.000Z</published>
-    <updated>2024-03-10T15:45:29.388Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;安装与启动&quot;&gt;&lt;a href=&quot;#安装与启动&quot; class=&quot;headerlink&quot; title=&quot;安装与启动&quot;&gt;&lt;/a&gt;安装与启动&lt;/h1&gt;&lt;p&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="后端" scheme="https://easton119.github.io/categories/%E5%90%8E%E7%AB%AF/"/>
-    
-    <category term="redis" scheme="https://easton119.github.io/categories/%E5%90%8E%E7%AB%AF/redis/"/>
-    
-    
-    <category term="redis" scheme="https://easton119.github.io/tags/redis/"/>
     
   </entry>
   
