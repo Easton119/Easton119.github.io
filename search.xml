@@ -64,7 +64,7 @@
 
 ]]></content>
       <categories>
-        <category>其他</category>
+        <category>博客</category>
       </categories>
       <tags>
         <tag>Hexo</tag>
@@ -872,6 +872,26 @@ DELETE /heima/_doc/1<span aria-hidden="true" class="line-numbers-rows"><span></s
       </categories>
       <tags>
         <tag>Maven</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo博客搭建与github+PicGo图床设置</title>
+    <url>/2024/12/24/bo-ke-da-jian-yu-tu-chuang-she-zhi/</url>
+    <content><![CDATA[<p>简介：使用的Hexo搭建博客，Typora本地笔记，Typora设置PicGo插件进行上传，然后在PicGo里面选择github来作为免费图床。</p>
+<p>注意，要使用<code>npm install hexo-asset-img --save</code> 下载img插件到文件夹中，不然就算上传到图床成功也在博客网页中显示不出来。</p>
+<p>（hexo使用指令：</p>
+<p><code>hexo clean</code> 清除原有public</p>
+<p><code>hexo g</code> 生成</p>
+<p><code>hexo d</code> 发布</p>
+<p>）</p>
+<p>参考1：<a href="https://www.cnblogs.com/hopeblaze/articles/18620540">搭建免费稳定图床 github+jsdelivr+picgo 方案 - 工程师焱记 - 博客园</a></p>
+<p>参考2：<a href="https://blog.csdn.net/m0_43401436/article/details/107191688">hexo博客中插入图片失败——解决思路及个人最终解决办法_hexo 文章插入图片失败-CSDN博客</a></p>
+]]></content>
+      <categories>
+        <category>博客</category>
+      </categories>
+      <tags>
+        <tag>图床</tag>
       </tags>
   </entry>
 </search>
