@@ -6,7 +6,7 @@
   <link href="https://easton119.github.io/atom.xml" rel="self"/>
   
   <link href="https://easton119.github.io/"/>
-  <updated>2024-12-24T04:51:44.769Z</updated>
+  <updated>2025-01-24T14:38:54.102Z</updated>
   <id>https://easton119.github.io/</id>
   
   <author>
@@ -17,11 +17,36 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>使用Templater在Obsidian中进行html代码块插入</title>
+    <link href="https://easton119.github.io/2025/01/24/shi-yong-templater-cha-jian-zai-obsidian-zhong-jin-xing-html-dai-ma-kuai-cha-ru/"/>
+    <id>https://easton119.github.io/2025/01/24/shi-yong-templater-cha-jian-zai-obsidian-zhong-jin-xing-html-dai-ma-kuai-cha-ru/</id>
+    <published>2025-01-23T16:00:00.000Z</published>
+    <updated>2025-01-24T14:38:54.102Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;场景&quot;&gt;&lt;a href=&quot;#场景&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="工作流搭建" scheme="https://easton119.github.io/categories/%E5%B7%A5%E4%BD%9C%E6%B5%81%E6%90%AD%E5%BB%BA/"/>
+    
+    
+    <category term="Obsidian" scheme="https://easton119.github.io/tags/Obsidian/"/>
+    
+  </entry>
+  
+  <entry>
     <title>hexo博客搭建与github+PicGo图床设置</title>
     <link href="https://easton119.github.io/2024/12/24/bo-ke-da-jian-yu-tu-chuang-she-zhi/"/>
     <id>https://easton119.github.io/2024/12/24/bo-ke-da-jian-yu-tu-chuang-she-zhi/</id>
     <published>2024-12-24T04:44:25.000Z</published>
-    <updated>2024-12-24T04:51:44.769Z</updated>
+    <updated>2025-01-24T14:04:17.815Z</updated>
     
     
       
