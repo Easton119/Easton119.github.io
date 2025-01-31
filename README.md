@@ -1,7 +1,11 @@
-<<<<<<< HEAD
-# my-vuepress-site
+# vuepress-Blog
+基于VuePress-theme-Plume搭建的个人博客
 
-The Site is generated using [vuepress](https://vuepress.vuejs.org/) and [vuepress-theme-plume](https://github.com/pengzhanbo/vuepress-theme-plume)
+
+## Documents
+
+- [vuepress](https://vuepress.vuejs.org/)
+- [vuepress-theme-plume](https://theme-plume.vuejs.press/)
 
 ## Install
 
@@ -21,12 +25,3 @@ npm run docs:preview
 # update vuepress and theme
 npm run vp-update
 ```
-
-## Documents
-
-- [vuepress](https://vuepress.vuejs.org/)
-- [vuepress-theme-plume](https://theme-plume.vuejs.press/)
-=======
-# vuepress-Blog
-基于VuePress-theme-Plume搭建的个人博客
->>>>>>> origin/main
