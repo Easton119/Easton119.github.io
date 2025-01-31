@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # my-vuepress-site
 
 The Site is generated using [vuepress](https://vuepress.vuejs.org/) and [vuepress-theme-plume](https://github.com/pengzhanbo/vuepress-theme-plume)
@@ -25,3 +26,7 @@ npm run vp-update
 
 - [vuepress](https://vuepress.vuejs.org/)
 - [vuepress-theme-plume](https://theme-plume.vuejs.press/)
+=======
+# vuepress-Blog
+基于VuePress-theme-Plume搭建的个人博客
+>>>>>>> origin/main
