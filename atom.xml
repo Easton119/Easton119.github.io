@@ -104,10 +104,10 @@
   
   <entry>
     <title>hexo博客搭建与github+PicGo图床设置</title>
-    <link href="https://easton119.github.io/2024/12/24/bo-ke-da-jian-yu-tu-chuang-she-zhi/"/>
-    <id>https://easton119.github.io/2024/12/24/bo-ke-da-jian-yu-tu-chuang-she-zhi/</id>
+    <link href="https://easton119.github.io/2024/12/24/hexo-bo-ke-da-jian-yu-github-picgo-tu-chuang-she-zhi/"/>
+    <id>https://easton119.github.io/2024/12/24/hexo-bo-ke-da-jian-yu-github-picgo-tu-chuang-she-zhi/</id>
     <published>2024-12-24T04:44:25.000Z</published>
-    <updated>2025-01-24T14:04:17.815Z</updated>
+    <updated>2025-01-31T05:06:05.619Z</updated>
     
     
       
@@ -121,10 +121,16 @@
     
     
     
-    <category term="博客" scheme="https://easton119.github.io/categories/%E5%8D%9A%E5%AE%A2/"/>
+    <category term="工作流搭建" scheme="https://easton119.github.io/categories/%E5%B7%A5%E4%BD%9C%E6%B5%81%E6%90%AD%E5%BB%BA/"/>
     
+    <category term="博客" scheme="https://easton119.github.io/categories/%E5%B7%A5%E4%BD%9C%E6%B5%81%E6%90%AD%E5%BB%BA/%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+    <category term="Hexo" scheme="https://easton119.github.io/tags/Hexo/"/>
     
     <category term="图床" scheme="https://easton119.github.io/tags/%E5%9B%BE%E5%BA%8A/"/>
+    
+    <category term="博客" scheme="https://easton119.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
     
   </entry>
   
@@ -299,7 +305,7 @@
     <link href="https://easton119.github.io/2023/09/08/maven-yin-ru-lombok-yi-lai-bu-sheng-xiao-copy/"/>
     <id>https://easton119.github.io/2023/09/08/maven-yin-ru-lombok-yi-lai-bu-sheng-xiao-copy/</id>
     <published>2023-09-08T10:48:25.000Z</published>
-    <updated>2024-03-10T05:41:40.648Z</updated>
+    <updated>2025-01-31T05:07:03.863Z</updated>
     
     
       
@@ -364,63 +370,6 @@
         
         
     <summary type="html">&lt;h1 id=&quot;SpringBoot项目-手动构建&quot;&gt;&lt;a href=&quot;#SpringBoot项目-手动构建&quot; class=&quot;headerlink&quot; title=&quot;SpringBoot项目-手动构建&quot;&gt;&lt;/a&gt;SpringBoot项目-手动构建&lt;/h1&gt;&lt;h2</summary>
-        
-      
-    
-    
-    
-    <category term="后端" scheme="https://easton119.github.io/categories/%E5%90%8E%E7%AB%AF/"/>
-    
-    <category term="Java" scheme="https://easton119.github.io/categories/%E5%90%8E%E7%AB%AF/Java/"/>
-    
-    
-    <category term="Java" scheme="https://easton119.github.io/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>springboot原理篇</title>
-    <link href="https://easton119.github.io/2023/09/08/springboot-yuan-li-pian/"/>
-    <id>https://easton119.github.io/2023/09/08/springboot-yuan-li-pian/</id>
-    <published>2023-09-08T03:20:25.000Z</published>
-    <updated>2024-03-10T05:41:46.895Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;自动配置&quot;&gt;&lt;a href=&quot;#自动配置&quot; class=&quot;headerlink&quot; title=&quot;自动配置&quot;&gt;&lt;/a&gt;自动配置&lt;/h1&gt;&lt;p&gt;自动配置原理&lt;/p&gt;
-&lt;p&gt;&lt;img</summary>
-        
-      
-    
-    
-    
-    <category term="后端" scheme="https://easton119.github.io/categories/%E5%90%8E%E7%AB%AF/"/>
-    
-    <category term="Java" scheme="https://easton119.github.io/categories/%E5%90%8E%E7%AB%AF/Java/"/>
-    
-    
-    <category term="Java" scheme="https://easton119.github.io/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>springboot入门</title>
-    <link href="https://easton119.github.io/2023/09/07/springboot-ru-men/"/>
-    <id>https://easton119.github.io/2023/09/07/springboot-ru-men/</id>
-    <published>2023-09-07T12:36:25.000Z</published>
-    <updated>2024-12-24T03:33:15.739Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;入门&quot;&gt;&lt;a href=&quot;#入门&quot; class=&quot;headerlink&quot; title=&quot;入门&quot;&gt;&lt;/a&gt;入门&lt;/h1&gt;&lt;p&gt;创建时勾选 spring web&lt;/p&gt;
-&lt;p&gt;有时候需要缓存 invalidate caches/restart&lt;/p&gt;
-&lt;h2</summary>
         
       
     
