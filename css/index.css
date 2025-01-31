@@ -2586,6 +2586,66 @@ pre[class*='language-'] pre > code.highlight {
 #recent-posts > .recent-post-item >.recent-post-info > .content {
   -webkit-line-clamp: 2;
 }
+.github-projects {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.project-list {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.project-card {
+  width: 250px;
+  background-color: #24292e;
+  border-radius: 10px;
+  padding: 15px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+.project-card:hover {
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  background-color: #0366d6;
+}
+.project-card a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+.project-card .card-content h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.project-card .card-content p {
+  font-size: 14px;
+  opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: alpha(opacity=80);
+}
 .tag-cloud-list a {
   display: inline-block;
   padding: 0 8px;
