@@ -1,31 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Maven</title>
-    <url>/2023/09/08/maven/</url>
-    <content><![CDATA[<p>仓库：本地仓库，远程仓库（私服），中央仓库</p>
-<h2 id="依赖管理"><a href="#依赖管理" class="headerlink" title="依赖管理"></a>依赖管理</h2><p>坐标：<br>组织名，模块名，版本</p>
-<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>groupId</span><span class="token punctuation">&gt;</span></span>org.example<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>groupId</span><span class="token punctuation">&gt;</span></span>  
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>artifactId</span><span class="token punctuation">&gt;</span></span>MavenDemo01<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>artifactId</span><span class="token punctuation">&gt;</span></span>  
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>version</span><span class="token punctuation">&gt;</span></span>1.0-SNAPSHOT<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>version</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
-<p>maven仓库：<br><a href="https://mvnrepository.com/">https://mvnrepository.com/</a></p>
-<p><strong>依赖传递</strong><br>排除依赖：指主动断开依赖。exclusions ,exclusion。排除依赖时不需要版本</p>
-<p><strong>依赖范围</strong><br>通过scope设置范围:<br>默认compile，还有test，provided，runtime</p>
-<p><strong>生命周期</strong></p>
-<p>有三套独立的生命周期：clean，default，site</p>
-<p>生命周期的执行实际是由插件完成的。</p>
-<p><img src="https://web-tlias1137.oss-cn-beijing.aliyuncs.com/document/Pasted%20image%2020230906214956.png"></p>
-]]></content>
-      <categories>
-        <category>后端</category>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>Maven</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hexo butterfly主题博客搭建</title>
     <url>/2024/03/10/hexo-butterfly-zhu-ti-da-jian/</url>
     <content><![CDATA[<h3 id="Why-Hexo"><a href="#Why-Hexo" class="headerlink" title="Why Hexo?"></a>Why Hexo?</h3><p>高中时使用的是博客园，</p>
@@ -64,10 +39,36 @@
 
 ]]></content>
       <categories>
+        <category>工作流搭建</category>
         <category>博客</category>
       </categories>
       <tags>
         <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Maven</title>
+    <url>/2023/09/08/maven/</url>
+    <content><![CDATA[<p>仓库：本地仓库，远程仓库（私服），中央仓库</p>
+<h2 id="依赖管理"><a href="#依赖管理" class="headerlink" title="依赖管理"></a>依赖管理</h2><p>坐标：<br>组织名，模块名，版本</p>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>groupId</span><span class="token punctuation">&gt;</span></span>org.example<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>groupId</span><span class="token punctuation">&gt;</span></span>  
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>artifactId</span><span class="token punctuation">&gt;</span></span>MavenDemo01<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>artifactId</span><span class="token punctuation">&gt;</span></span>  
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>version</span><span class="token punctuation">&gt;</span></span>1.0-SNAPSHOT<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>version</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p>maven仓库：<br><a href="https://mvnrepository.com/">https://mvnrepository.com/</a></p>
+<p><strong>依赖传递</strong><br>排除依赖：指主动断开依赖。exclusions ,exclusion。排除依赖时不需要版本</p>
+<p><strong>依赖范围</strong><br>通过scope设置范围:<br>默认compile，还有test，provided，runtime</p>
+<p><strong>生命周期</strong></p>
+<p>有三套独立的生命周期：clean，default，site</p>
+<p>生命周期的执行实际是由插件完成的。</p>
+<p><img src="https://web-tlias1137.oss-cn-beijing.aliyuncs.com/document/Pasted%20image%2020230906214956.png"></p>
+]]></content>
+      <categories>
+        <category>后端</category>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Maven</tag>
       </tags>
   </entry>
   <entry>
@@ -126,14 +127,6 @@
       <tags>
         <tag>Java</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>New Start</title>
-    <url>/2024/03/09/new-start/</url>
-    <content><![CDATA[<p>春水方生，尘土扬，</p>
-<p>此时当是，</p>
-<p>乘风好去，长空万里，直下看山河</p>
-]]></content>
   </entry>
   <entry>
     <title>gin框架基础</title>
@@ -262,6 +255,172 @@ db<span class="token punctuation">.</span><span class="token function">Create</s
       </categories>
       <tags>
         <tag>Go</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>maven引入Lombok依赖不生效</title>
+    <url>/2023/09/08/maven-yin-ru-lombok-yi-lai-bu-sheng-xiao-copy/</url>
+    <content><![CDATA[<h2 id="第一种解决方案"><a href="#第一种解决方案" class="headerlink" title="第一种解决方案"></a>第一种解决方案</h2><p>尝试完整引入下面代码：</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token generics"><span class="token punctuation">&lt;</span>build<span class="token punctuation">&gt;</span></span>
+        <span class="token generics"><span class="token punctuation">&lt;</span>plugins<span class="token punctuation">&gt;</span></span>
+            <span class="token generics"><span class="token punctuation">&lt;</span>plugin<span class="token punctuation">&gt;</span></span>
+                <span class="token generics"><span class="token punctuation">&lt;</span>groupId<span class="token punctuation">&gt;</span></span>org<span class="token punctuation">.</span>springframework<span class="token punctuation">.</span>boot<span class="token operator">&lt;</span><span class="token operator">/</span>groupId<span class="token operator">&gt;</span>
+                <span class="token generics"><span class="token punctuation">&lt;</span>artifactId<span class="token punctuation">&gt;</span></span>spring<span class="token operator">-</span>boot<span class="token operator">-</span>maven<span class="token operator">-</span>plugin<span class="token operator">&lt;</span><span class="token operator">/</span>artifactId<span class="token operator">&gt;</span>
+                <span class="token generics"><span class="token punctuation">&lt;</span>configuration<span class="token punctuation">&gt;</span></span>
+                    <span class="token generics"><span class="token punctuation">&lt;</span>excludes<span class="token punctuation">&gt;</span></span>
+                        <span class="token generics"><span class="token punctuation">&lt;</span>exclude<span class="token punctuation">&gt;</span></span>
+                            <span class="token generics"><span class="token punctuation">&lt;</span>groupId<span class="token punctuation">&gt;</span></span>org<span class="token punctuation">.</span>projectlombok<span class="token operator">&lt;</span><span class="token operator">/</span>groupId<span class="token operator">&gt;</span>
+                            <span class="token generics"><span class="token punctuation">&lt;</span>artifactId<span class="token punctuation">&gt;</span></span>lombok<span class="token operator">&lt;</span><span class="token operator">/</span>artifactId<span class="token operator">&gt;</span>
+                        <span class="token operator">&lt;</span><span class="token operator">/</span>exclude<span class="token operator">&gt;</span>
+                    <span class="token operator">&lt;</span><span class="token operator">/</span>excludes<span class="token operator">&gt;</span>
+                <span class="token operator">&lt;</span><span class="token operator">/</span>configuration<span class="token operator">&gt;</span>
+            <span class="token operator">&lt;</span><span class="token operator">/</span>plugin<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span><span class="token operator">/</span>plugins<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>build<span class="token operator">&gt;</span>
+    <span class="token generics"><span class="token punctuation">&lt;</span>dependencies<span class="token punctuation">&gt;</span></span>
+        <span class="token generics"><span class="token punctuation">&lt;</span>dependency<span class="token punctuation">&gt;</span></span>
+            <span class="token generics"><span class="token punctuation">&lt;</span>groupId<span class="token punctuation">&gt;</span></span>org<span class="token punctuation">.</span>projectlombok<span class="token operator">&lt;</span><span class="token operator">/</span>groupId<span class="token operator">&gt;</span>
+            <span class="token generics"><span class="token punctuation">&lt;</span>artifactId<span class="token punctuation">&gt;</span></span>lombok<span class="token operator">&lt;</span><span class="token operator">/</span>artifactId<span class="token operator">&gt;</span>
+            <span class="token generics"><span class="token punctuation">&lt;</span>version<span class="token punctuation">&gt;</span></span><span class="token number">1.18</span><span class="token number">.4</span><span class="token operator">&lt;</span><span class="token operator">/</span>version<span class="token operator">&gt;</span>
+            <span class="token generics"><span class="token punctuation">&lt;</span>scope<span class="token punctuation">&gt;</span></span>provided<span class="token operator">&lt;</span><span class="token operator">/</span>scope<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span><span class="token operator">/</span>dependency<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>dependencies<span class="token operator">&gt;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+
+
+]]></content>
+      <categories>
+        <category>后端</category>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Maven</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>go+elasticsearch实现站内搜索(1)</title>
+    <url>/2024/03/12/go-elasticsearch/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p><code>ElasticSearch</code>是一个分布式、<code>RESTful</code>风格的搜索和数据分析引擎，在国内简称为<code>ES</code>；使用<code>Java</code>开发的，底层基于<code>Lucene</code>是一种全文检索的搜索库，直接使用使用Lucene还是比较麻烦的，<a href="https://cloud.tencent.com/product/es?from_column=20065&amp;from=20065">Elasticsearch</a>在Lucene的基础上开发了一个强大的搜索引擎。前面说这么多，其实还是不知道他是干什么的。简单来说，他就是一个搜索引擎，可以快速存储、搜索和分析海量数据。我们常用的<code>github</code>、<code>Stack Overflow</code>都采用的<code>Es</code>来做的。</p>
+<h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2><p>首先是版本选择问题，</p>
+<p>我一共尝试了3个版本：</p>
+<ol>
+<li><p>v8版本</p>
+<p>去除安全限制：</p>
+<p>在 config/elasticsearch.yml 文件中</p>
+<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token key atrule">xpack.security.enabled</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+<span class="token key atrule">xpack.security.http.ssl.enabled</span><span class="token punctuation">:</span> <span class="token boolean important">false</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p>我们把上面的两行添加到 Elasticsearch 的配置文件中。然后启动 Elasticsearch。这样启动后的 Elasticsearch 就没有安全配置了。你可以通过 <a href="http://localhost:9200/">http://localhost:9200</a> 来进行访问。启动后的 Kibana 我们也不需要输入用户名及密码了。</p>
+</li>
+<li><p>v7.17.15</p>
+<p>该版本不能直接运行，要更改yml文化中的ip等字段</p>
+</li>
+<li><p>v7.17.18可以直接运行，不需要修改文件</p>
+</li>
+</ol>
+<p>注意：</p>
+<p>​	elasticsearch 和 kibana ，分词器插件版本要一致</p>
+<blockquote>
+<p>出现报错：[.kibana] Action failed with ‘Request timed out’. Retrying attempt 1 in 2 seconds.</p>
+<p>原因：因为不小心在es启动的cmd窗口中鼠标不小心选中了任何字符串都会导致es的输出受阻，进而导致kibana启动失败</p>
+</blockquote>
+<h2 id="学习"><a href="#学习" class="headerlink" title="学习"></a>学习</h2><p>(ps:基于v7版本)</p>
+<h4 id="一、索引库-mapping属性"><a href="#一、索引库-mapping属性" class="headerlink" title="一、索引库 mapping属性"></a>一、索引库 mapping属性</h4><p>常见的mapping属性包括：</p>
+<ul>
+<li>type :字段数据类型，常见简单类型有：<ul>
+<li>字符串 ：text (可分词的文本)、keyword(精确值)</li>
+<li>数值：long , integer , short , byte , double , float</li>
+<li>布尔：boolean</li>
+<li>日期：data</li>
+<li>对象：object</li>
+</ul>
+</li>
+<li>index : 是否创建索引，默认为true</li>
+<li>analyzer : 使用哪种分词器</li>
+<li>properties : 该字段的子字段</li>
+</ul>
+<h4 id="二-、创建索引库与修改"><a href="#二-、创建索引库与修改" class="headerlink" title="二 、创建索引库与修改"></a>二 、创建索引库与修改</h4><pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml">GET /
+
+<span class="token comment"># 测试</span>
+POST /_analyze
+<span class="token punctuation">{</span>
+  <span class="token key atrule">"text"</span><span class="token punctuation">:</span> <span class="token string">"学习elastic"</span><span class="token punctuation">,</span>
+  <span class="token key atrule">"analyzer"</span><span class="token punctuation">:</span> <span class="token string">"ik_max_word"</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment"># 创建索引库</span>
+PUT /heima
+<span class="token punctuation">{</span>
+  <span class="token key atrule">"mappings"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token key atrule">"properties"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      "info"<span class="token punctuation">:</span><span class="token punctuation">{</span>
+        <span class="token key atrule">"type"</span><span class="token punctuation">:</span> <span class="token string">"text"</span><span class="token punctuation">,</span>
+        <span class="token key atrule">"analyzer"</span><span class="token punctuation">:</span> <span class="token string">"ik_smart"</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      "email"<span class="token punctuation">:</span><span class="token punctuation">{</span>
+        "type"<span class="token punctuation">:</span><span class="token string">"keyword"</span><span class="token punctuation">,</span>
+        <span class="token key atrule">"index"</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      "name"<span class="token punctuation">:</span><span class="token punctuation">{</span>
+        <span class="token key atrule">"type"</span><span class="token punctuation">:</span> <span class="token string">"object"</span><span class="token punctuation">,</span> 
+        <span class="token key atrule">"properties"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+          "firstName"<span class="token punctuation">:</span><span class="token punctuation">{</span>
+            "type"<span class="token punctuation">:</span><span class="token string">"keyword"</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          "lastName"<span class="token punctuation">:</span><span class="token punctuation">{</span>
+            "type"<span class="token punctuation">:</span><span class="token string">"keyword"</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<p>修改索引库，添加新字段</p>
+<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token comment">#修改索引库，添加新字段</span>
+PUT /heima/_mapping
+<span class="token punctuation">{</span>
+  "properties"<span class="token punctuation">:</span><span class="token punctuation">{</span>
+    "age"<span class="token punctuation">:</span><span class="token punctuation">{</span>
+      "type"<span class="token punctuation">:</span><span class="token string">"integer"</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h4 id="三-、对文档的操作"><a href="#三-、对文档的操作" class="headerlink" title="三 、对文档的操作"></a>三 、对文档的操作</h4><pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token comment"># 插入文档</span>
+POST /heima/_doc/1
+<span class="token punctuation">{</span>
+  "info"<span class="token punctuation">:</span><span class="token string">"程序员go讲师"</span><span class="token punctuation">,</span>
+  "email"<span class="token punctuation">:</span><span class="token string">"zy@qq.com"</span><span class="token punctuation">,</span>
+  "name"<span class="token punctuation">:</span><span class="token punctuation">{</span>
+    "firstName"<span class="token punctuation">:</span><span class="token string">"赵"</span><span class="token punctuation">,</span>
+    "lastName"<span class="token punctuation">:</span><span class="token string">"小云"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  "age"<span class="token punctuation">:</span><span class="token number">20</span>
+<span class="token punctuation">}</span>
+<span class="token comment"># 查询文档</span>
+GET /heima/_doc/1
+<span class="token comment"># 删除文档</span>
+DELETE /heima/_doc/1<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<p>修改文档操作</p>
+<p><img src="https://web-tlias1137.oss-cn-beijing.aliyuncs.com/document/1709815945221-e0cd8ea4-9c48-4d1e-98db-4ddee161a4a4.png" alt="image.png"></p>
+]]></content>
+      <categories>
+        <category>后端</category>
+        <category>Elasticsearch</category>
+      </categories>
+      <tags>
+        <tag>Go</tag>
+        <tag>Elasticsearch</tag>
       </tags>
   </entry>
   <entry>
@@ -493,172 +652,6 @@ step1<span aria-hidden="true" class="line-numbers-rows"><span></span><span></spa
       </tags>
   </entry>
   <entry>
-    <title>maven引入Lombok依赖不生效</title>
-    <url>/2023/09/08/maven-yin-ru-lombok-yi-lai-bu-sheng-xiao-copy/</url>
-    <content><![CDATA[<h2 id="第一种解决方案"><a href="#第一种解决方案" class="headerlink" title="第一种解决方案"></a>第一种解决方案</h2><p>尝试完整引入下面代码：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token generics"><span class="token punctuation">&lt;</span>build<span class="token punctuation">&gt;</span></span>
-        <span class="token generics"><span class="token punctuation">&lt;</span>plugins<span class="token punctuation">&gt;</span></span>
-            <span class="token generics"><span class="token punctuation">&lt;</span>plugin<span class="token punctuation">&gt;</span></span>
-                <span class="token generics"><span class="token punctuation">&lt;</span>groupId<span class="token punctuation">&gt;</span></span>org<span class="token punctuation">.</span>springframework<span class="token punctuation">.</span>boot<span class="token operator">&lt;</span><span class="token operator">/</span>groupId<span class="token operator">&gt;</span>
-                <span class="token generics"><span class="token punctuation">&lt;</span>artifactId<span class="token punctuation">&gt;</span></span>spring<span class="token operator">-</span>boot<span class="token operator">-</span>maven<span class="token operator">-</span>plugin<span class="token operator">&lt;</span><span class="token operator">/</span>artifactId<span class="token operator">&gt;</span>
-                <span class="token generics"><span class="token punctuation">&lt;</span>configuration<span class="token punctuation">&gt;</span></span>
-                    <span class="token generics"><span class="token punctuation">&lt;</span>excludes<span class="token punctuation">&gt;</span></span>
-                        <span class="token generics"><span class="token punctuation">&lt;</span>exclude<span class="token punctuation">&gt;</span></span>
-                            <span class="token generics"><span class="token punctuation">&lt;</span>groupId<span class="token punctuation">&gt;</span></span>org<span class="token punctuation">.</span>projectlombok<span class="token operator">&lt;</span><span class="token operator">/</span>groupId<span class="token operator">&gt;</span>
-                            <span class="token generics"><span class="token punctuation">&lt;</span>artifactId<span class="token punctuation">&gt;</span></span>lombok<span class="token operator">&lt;</span><span class="token operator">/</span>artifactId<span class="token operator">&gt;</span>
-                        <span class="token operator">&lt;</span><span class="token operator">/</span>exclude<span class="token operator">&gt;</span>
-                    <span class="token operator">&lt;</span><span class="token operator">/</span>excludes<span class="token operator">&gt;</span>
-                <span class="token operator">&lt;</span><span class="token operator">/</span>configuration<span class="token operator">&gt;</span>
-            <span class="token operator">&lt;</span><span class="token operator">/</span>plugin<span class="token operator">&gt;</span>
-        <span class="token operator">&lt;</span><span class="token operator">/</span>plugins<span class="token operator">&gt;</span>
-    <span class="token operator">&lt;</span><span class="token operator">/</span>build<span class="token operator">&gt;</span>
-    <span class="token generics"><span class="token punctuation">&lt;</span>dependencies<span class="token punctuation">&gt;</span></span>
-        <span class="token generics"><span class="token punctuation">&lt;</span>dependency<span class="token punctuation">&gt;</span></span>
-            <span class="token generics"><span class="token punctuation">&lt;</span>groupId<span class="token punctuation">&gt;</span></span>org<span class="token punctuation">.</span>projectlombok<span class="token operator">&lt;</span><span class="token operator">/</span>groupId<span class="token operator">&gt;</span>
-            <span class="token generics"><span class="token punctuation">&lt;</span>artifactId<span class="token punctuation">&gt;</span></span>lombok<span class="token operator">&lt;</span><span class="token operator">/</span>artifactId<span class="token operator">&gt;</span>
-            <span class="token generics"><span class="token punctuation">&lt;</span>version<span class="token punctuation">&gt;</span></span><span class="token number">1.18</span><span class="token number">.4</span><span class="token operator">&lt;</span><span class="token operator">/</span>version<span class="token operator">&gt;</span>
-            <span class="token generics"><span class="token punctuation">&lt;</span>scope<span class="token punctuation">&gt;</span></span>provided<span class="token operator">&lt;</span><span class="token operator">/</span>scope<span class="token operator">&gt;</span>
-        <span class="token operator">&lt;</span><span class="token operator">/</span>dependency<span class="token operator">&gt;</span>
-    <span class="token operator">&lt;</span><span class="token operator">/</span>dependencies<span class="token operator">&gt;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-
-
-
-]]></content>
-      <categories>
-        <category>后端</category>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>Maven</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>go+elasticsearch实现站内搜索(1)</title>
-    <url>/2024/03/12/go-elasticsearch/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p><code>ElasticSearch</code>是一个分布式、<code>RESTful</code>风格的搜索和数据分析引擎，在国内简称为<code>ES</code>；使用<code>Java</code>开发的，底层基于<code>Lucene</code>是一种全文检索的搜索库，直接使用使用Lucene还是比较麻烦的，<a href="https://cloud.tencent.com/product/es?from_column=20065&amp;from=20065">Elasticsearch</a>在Lucene的基础上开发了一个强大的搜索引擎。前面说这么多，其实还是不知道他是干什么的。简单来说，他就是一个搜索引擎，可以快速存储、搜索和分析海量数据。我们常用的<code>github</code>、<code>Stack Overflow</code>都采用的<code>Es</code>来做的。</p>
-<h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2><p>首先是版本选择问题，</p>
-<p>我一共尝试了3个版本：</p>
-<ol>
-<li><p>v8版本</p>
-<p>去除安全限制：</p>
-<p>在 config/elasticsearch.yml 文件中</p>
-<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token key atrule">xpack.security.enabled</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
-<span class="token key atrule">xpack.security.http.ssl.enabled</span><span class="token punctuation">:</span> <span class="token boolean important">false</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
-<p>我们把上面的两行添加到 Elasticsearch 的配置文件中。然后启动 Elasticsearch。这样启动后的 Elasticsearch 就没有安全配置了。你可以通过 <a href="http://localhost:9200/">http://localhost:9200</a> 来进行访问。启动后的 Kibana 我们也不需要输入用户名及密码了。</p>
-</li>
-<li><p>v7.17.15</p>
-<p>该版本不能直接运行，要更改yml文化中的ip等字段</p>
-</li>
-<li><p>v7.17.18可以直接运行，不需要修改文件</p>
-</li>
-</ol>
-<p>注意：</p>
-<p>​	elasticsearch 和 kibana ，分词器插件版本要一致</p>
-<blockquote>
-<p>出现报错：[.kibana] Action failed with ‘Request timed out’. Retrying attempt 1 in 2 seconds.</p>
-<p>原因：因为不小心在es启动的cmd窗口中鼠标不小心选中了任何字符串都会导致es的输出受阻，进而导致kibana启动失败</p>
-</blockquote>
-<h2 id="学习"><a href="#学习" class="headerlink" title="学习"></a>学习</h2><p>(ps:基于v7版本)</p>
-<h4 id="一、索引库-mapping属性"><a href="#一、索引库-mapping属性" class="headerlink" title="一、索引库 mapping属性"></a>一、索引库 mapping属性</h4><p>常见的mapping属性包括：</p>
-<ul>
-<li>type :字段数据类型，常见简单类型有：<ul>
-<li>字符串 ：text (可分词的文本)、keyword(精确值)</li>
-<li>数值：long , integer , short , byte , double , float</li>
-<li>布尔：boolean</li>
-<li>日期：data</li>
-<li>对象：object</li>
-</ul>
-</li>
-<li>index : 是否创建索引，默认为true</li>
-<li>analyzer : 使用哪种分词器</li>
-<li>properties : 该字段的子字段</li>
-</ul>
-<h4 id="二-、创建索引库与修改"><a href="#二-、创建索引库与修改" class="headerlink" title="二 、创建索引库与修改"></a>二 、创建索引库与修改</h4><pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml">GET /
-
-<span class="token comment"># 测试</span>
-POST /_analyze
-<span class="token punctuation">{</span>
-  <span class="token key atrule">"text"</span><span class="token punctuation">:</span> <span class="token string">"学习elastic"</span><span class="token punctuation">,</span>
-  <span class="token key atrule">"analyzer"</span><span class="token punctuation">:</span> <span class="token string">"ik_max_word"</span>
-<span class="token punctuation">}</span>
-
-<span class="token comment"># 创建索引库</span>
-PUT /heima
-<span class="token punctuation">{</span>
-  <span class="token key atrule">"mappings"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
-    <span class="token key atrule">"properties"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
-      "info"<span class="token punctuation">:</span><span class="token punctuation">{</span>
-        <span class="token key atrule">"type"</span><span class="token punctuation">:</span> <span class="token string">"text"</span><span class="token punctuation">,</span>
-        <span class="token key atrule">"analyzer"</span><span class="token punctuation">:</span> <span class="token string">"ik_smart"</span>
-      <span class="token punctuation">}</span><span class="token punctuation">,</span>
-      "email"<span class="token punctuation">:</span><span class="token punctuation">{</span>
-        "type"<span class="token punctuation">:</span><span class="token string">"keyword"</span><span class="token punctuation">,</span>
-        <span class="token key atrule">"index"</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
-      <span class="token punctuation">}</span><span class="token punctuation">,</span>
-      "name"<span class="token punctuation">:</span><span class="token punctuation">{</span>
-        <span class="token key atrule">"type"</span><span class="token punctuation">:</span> <span class="token string">"object"</span><span class="token punctuation">,</span> 
-        <span class="token key atrule">"properties"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
-          "firstName"<span class="token punctuation">:</span><span class="token punctuation">{</span>
-            "type"<span class="token punctuation">:</span><span class="token string">"keyword"</span>
-          <span class="token punctuation">}</span><span class="token punctuation">,</span>
-          "lastName"<span class="token punctuation">:</span><span class="token punctuation">{</span>
-            "type"<span class="token punctuation">:</span><span class="token string">"keyword"</span>
-          <span class="token punctuation">}</span>
-        <span class="token punctuation">}</span>
-      <span class="token punctuation">}</span>
-    <span class="token punctuation">}</span>
-  <span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-
-<p>修改索引库，添加新字段</p>
-<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token comment">#修改索引库，添加新字段</span>
-PUT /heima/_mapping
-<span class="token punctuation">{</span>
-  "properties"<span class="token punctuation">:</span><span class="token punctuation">{</span>
-    "age"<span class="token punctuation">:</span><span class="token punctuation">{</span>
-      "type"<span class="token punctuation">:</span><span class="token string">"integer"</span>
-    <span class="token punctuation">}</span>
-  <span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-
-<h4 id="三-、对文档的操作"><a href="#三-、对文档的操作" class="headerlink" title="三 、对文档的操作"></a>三 、对文档的操作</h4><pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token comment"># 插入文档</span>
-POST /heima/_doc/1
-<span class="token punctuation">{</span>
-  "info"<span class="token punctuation">:</span><span class="token string">"程序员go讲师"</span><span class="token punctuation">,</span>
-  "email"<span class="token punctuation">:</span><span class="token string">"zy@qq.com"</span><span class="token punctuation">,</span>
-  "name"<span class="token punctuation">:</span><span class="token punctuation">{</span>
-    "firstName"<span class="token punctuation">:</span><span class="token string">"赵"</span><span class="token punctuation">,</span>
-    "lastName"<span class="token punctuation">:</span><span class="token string">"小云"</span>
-  <span class="token punctuation">}</span><span class="token punctuation">,</span>
-  "age"<span class="token punctuation">:</span><span class="token number">20</span>
-<span class="token punctuation">}</span>
-<span class="token comment"># 查询文档</span>
-GET /heima/_doc/1
-<span class="token comment"># 删除文档</span>
-DELETE /heima/_doc/1<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-
-<p>修改文档操作</p>
-<p><img src="https://web-tlias1137.oss-cn-beijing.aliyuncs.com/document/1709815945221-e0cd8ea4-9c48-4d1e-98db-4ddee161a4a4.png" alt="image.png"></p>
-]]></content>
-      <categories>
-        <category>后端</category>
-        <category>Elasticsearch</category>
-      </categories>
-      <tags>
-        <tag>Go</tag>
-        <tag>Elasticsearch</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>springboot入门</title>
     <url>/2023/09/07/springboot-ru-men/</url>
     <content><![CDATA[<h1 id="入门"><a href="#入门" class="headerlink" title="入门"></a>入门</h1><p>创建时勾选 spring web</p>
@@ -666,6 +659,20 @@ DELETE /heima/_doc/1<span aria-hidden="true" class="line-numbers-rows"><span></s
 <h2 id="Http协议"><a href="#Http协议" class="headerlink" title="Http协议"></a>Http协议</h2><p>请求协议：<br>    请求行<br>    请求头<br>    请求体</p>
 <p>web服务器<br>    一个软件程序，对http协议的操作进行封装</p>
 <h2 id="Tomcat"><a href="#Tomcat" class="headerlink" title="Tomcat"></a>Tomcat</h2><p><a href="https://imgse.com/i/pPyspSP"><img src="https://s1.ax1x.com/2023/09/07/pPyspSP.png" alt="tomcat基本使用1"></a><br><a href="https://imgse.com/i/pPysUl6"><img src="https://s1.ax1x.com/2023/09/07/pPysUl6.png" alt="tomcat基本使用2"></a><br><a href="https://imgse.com/i/pPysa6K"><img src="https://s1.ax1x.com/2023/09/07/pPysa6K.png" alt="tomcat基本使用3"></a></p>
+]]></content>
+      <categories>
+        <category>后端</category>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>springboot原理篇</title>
+    <url>/2023/09/08/springboot-yuan-li-pian/</url>
+    <content><![CDATA[<h1 id="自动配置"><a href="#自动配置" class="headerlink" title="自动配置"></a>自动配置</h1><p>自动配置原理</p>
+<p><img src="https://web-tlias1137.oss-cn-beijing.aliyuncs.com/document/image-20230908111553101.png" alt="image-20230908111553101"></p>
 ]]></content>
       <categories>
         <category>后端</category>
@@ -3231,6 +3238,7 @@ String regStr = "\\d+" 贪婪<span aria-hidden="true" class="line-numbers-rows">
 
 ]]></content>
       <categories>
+        <category>后端</category>
         <category>Java</category>
       </categories>
       <tags>
@@ -3238,17 +3246,58 @@ String regStr = "\\d+" 贪婪<span aria-hidden="true" class="line-numbers-rows">
       </tags>
   </entry>
   <entry>
-    <title>springboot原理篇</title>
-    <url>/2023/09/08/springboot-yuan-li-pian/</url>
-    <content><![CDATA[<h1 id="自动配置"><a href="#自动配置" class="headerlink" title="自动配置"></a>自动配置</h1><p>自动配置原理</p>
-<p><img src="https://web-tlias1137.oss-cn-beijing.aliyuncs.com/document/image-20230908111553101.png" alt="image-20230908111553101"></p>
+    <title>使用Templater在Obsidian中进行html代码块插入与underline插件</title>
+    <url>/2025/01/24/shi-yong-templater-cha-jian-zai-obsidian-zhong-jin-xing-html-dai-ma-kuai-cha-ru-yu-underline-cha-jian/</url>
+    <content><![CDATA[<h3 id="场景"><a href="#场景" class="headerlink" title="场景"></a>场景</h3><p>在Obsidian中需要对文字进行标注时</p>
+<ol>
+<li>可以用<strong>增强编辑</strong>插件或<strong>highlighsrt</strong>插件对文字背景或者文字本身进行高亮处理</li>
+<li>可以使用underline插件标记下划线<br><img src="https://fastly.jsdelivr.net/gh/easton119/oss/test111/20250124221654.png" alt="image.png"><br>那么如何进行有颜色的下划线标注呢？</li>
+</ol>
+<h3 id="实现下划线的不完全方案"><a href="#实现下划线的不完全方案" class="headerlink" title="实现下划线的不完全方案"></a>实现下划线的不完全方案</h3><p>使用<strong>Templater</strong>插件</p>
+<h4 id="在obsidian的theme-css文件中创建一个类"><a href="#在obsidian的theme-css文件中创建一个类" class="headerlink" title="在obsidian的theme.css文件中创建一个类"></a>在obsidian的theme.css文件中创建一个类</h4><pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">.underline_1</span> <span class="token punctuation">{</span>
+  <span class="token property">text-decoration</span><span class="token punctuation">:</span> underline red<span class="token punctuation">;</span> <span class="token comment">/*下划线*/</span>
+  <span class="token property">text-underline-offset</span><span class="token punctuation">:</span> 4.6px<span class="token punctuation">;</span> <span class="token comment">/*下划线与文本间距*/</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>然后我们就可以在文本中手动插入html代码实现红色的下划线了</p>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span> <span class="token attr-value"><span class="token punctuation attr-equals">=</span> <span class="token punctuation">"</span>underline_1<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>文本内容<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+<h4 id="创建一个模板文件-template1-md"><a href="#创建一个模板文件-template1-md" class="headerlink" title="创建一个模板文件 template1.md"></a>创建一个模板文件 template1.md</h4><pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span> <span class="token attr-value"><span class="token punctuation attr-equals">=</span> <span class="token punctuation">"</span>t6999_14<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>&lt;% tp.file.selection() %&gt;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>其中<code>&lt;% tp.file.selection() %&gt;</code> 是 Templater 的占位符，会将当前选中的文本放入模板中。如果没有选中任何内容，则会插入空的 <code>&lt;span&gt;</code>。</p>
+<blockquote>
+<p>[!NOTE] 注意<br>如果该模板文件路径在某一个仓库目录下面，那么在其他仓库中是没法使用的</p>
+</blockquote>
+<h4 id="将模板与热键绑定"><a href="#将模板与热键绑定" class="headerlink" title="将模板与热键绑定"></a>将模板与热键绑定</h4><p>在插件中找到该处，先设置模板文件的路径<br><img src="https://fastly.jsdelivr.net/gh/easton119/oss/test111/20250124222854.png" alt="image.png"><br>再点击右边加号，选择Insert行键入快捷键 ，比如Ctrl+W</p>
+<p><img src="https://fastly.jsdelivr.net/gh/easton119/oss/test111/20250124223017.png" alt="image.png"><br>然后选中文字后ctrl+w即可<br><img src="https://fastly.jsdelivr.net/gh/easton119/oss/test111/20250124223233.png" alt="image.png"></p>
+<blockquote>
+<p>然后根据自己需要的样式修改css就行了</p>
+</blockquote>
+<h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><p>然而，经过测试，很容易发现这样插入模板中的html代码会出现问题，会改变原来的html格式。</p>
+<p>打开开发者工具（ctrl+shift+i）,可以看见会在span标签外面再套上div代码块，造成多余的换行。</p>
+<p><img src="https://fastly.jsdelivr.net/gh/easton119/oss/test111/image-20250125110424336.png" alt="image-20250125110424336"></p>
+<p>这个是templater插件渲染的问题，修改起来太麻烦了。</p>
+<h3 id="更方便和完善的方案"><a href="#更方便和完善的方案" class="headerlink" title="更方便和完善的方案"></a>更方便和完善的方案</h3><p>使用<strong>underline</strong>插件，对underline插件提供的样式进行修改。</p>
+<p>打开underline插件的main.js文件，在其中找到</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token operator">...</span>
+<span class="token class-name">Underline</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">wrapper</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">editor<span class="token punctuation">,</span> view<span class="token punctuation">,</span> prefix<span class="token punctuation">,</span> suffix</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>prefix <span class="token operator">===</span> <span class="token keyword">void</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> prefix <span class="token operator">=</span> <span class="token string">"&lt;u&gt;"</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>suffix <span class="token operator">===</span> <span class="token keyword">void</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> suffix <span class="token operator">=</span> <span class="token string">"&lt;/u&gt;"</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+    <span class="token operator">...</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>修改为：</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">if</span> <span class="token punctuation">(</span>prefix <span class="token operator">===</span> <span class="token keyword">void</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> prefix <span class="token operator">=</span> <span class="token string">'&lt;span class="underline_1"&gt;'</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span>suffix <span class="token operator">===</span> <span class="token keyword">void</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> suffix <span class="token operator">=</span> <span class="token string">"&lt;/span&gt;"</span><span class="token punctuation">;</span> <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p>重启obsidian，成功</p>
 ]]></content>
       <categories>
-        <category>后端</category>
-        <category>Java</category>
+        <category>工作流搭建</category>
+        <category>博客</category>
       </categories>
       <tags>
-        <tag>Java</tag>
+        <tag>Obsidian</tag>
       </tags>
   </entry>
   <entry>
@@ -3342,56 +3391,88 @@ String regStr = "\\d+" 贪婪<span aria-hidden="true" class="line-numbers-rows">
       </tags>
   </entry>
   <entry>
-    <title>使用Templater在Obsidian中进行html代码块插入</title>
-    <url>/2025/01/24/shi-yong-templater-cha-jian-zai-obsidian-zhong-jin-xing-html-dai-ma-kuai-cha-ru/</url>
-    <content><![CDATA[<h3 id="场景"><a href="#场景" class="headerlink" title="场景"></a>场景</h3><p>在Obsidian中需要对文字进行标注时</p>
-<ol>
-<li>可以用<strong>增强编辑</strong>插件或<strong>highlighsrt</strong>插件对文字背景或者文字本身进行高亮处理</li>
-<li>可以使用underline插件标记下划线<br><img src="https://fastly.jsdelivr.net/gh/easton119/oss/test111/20250124221654.png" alt="image.png"><br>那么如何进行有颜色的下划线标注呢？</li>
-</ol>
-<h3 id="实现下划线的不完全方案"><a href="#实现下划线的不完全方案" class="headerlink" title="实现下划线的不完全方案"></a>实现下划线的不完全方案</h3><p>使用<strong>Templater</strong>插件</p>
-<h4 id="在obsidian的theme-css文件中创建一个类"><a href="#在obsidian的theme-css文件中创建一个类" class="headerlink" title="在obsidian的theme.css文件中创建一个类"></a>在obsidian的theme.css文件中创建一个类</h4><pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">.underline_1</span> <span class="token punctuation">{</span>
-  <span class="token property">text-decoration</span><span class="token punctuation">:</span> underline red<span class="token punctuation">;</span> <span class="token comment">/*下划线*/</span>
-  <span class="token property">text-underline-offset</span><span class="token punctuation">:</span> 4.6px<span class="token punctuation">;</span> <span class="token comment">/*下划线与文本间距*/</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+    <title>使用软链接自动同步 Obsidian 笔记到 Hexo 博客</title>
+    <url>/2025/01/31/shi-yong-ruan-lian-jie-zi-dong-tong-bu-obsidian-bi-ji-dao-hexo-bo-ke/</url>
+    <content><![CDATA[<p>在日常学习和工作中，许多人使用 <strong>Obsidian</strong> 记录笔记，同时用 <strong>Hexo + GitHub Pages</strong> 搭建个人博客。如果希望将 Obsidian 中的部分笔记同步到 Hexo，而不想手动复制文件，可以使用 <strong>软链接（Symbolic Link）</strong> 进行自动管理。</p>
+<hr>
+<h2 id="一、软链接的作用"><a href="#一、软链接的作用" class="headerlink" title="一、软链接的作用"></a><strong>一、软链接的作用</strong></h2><p>软链接类似于 Windows 的快捷方式，它指向目标文件或目录，而不会实际复制文件。这样做有以下优点：</p>
+<ul>
+<li><strong>节省存储空间</strong>：避免重复存储相同的笔记文件。</li>
+<li><strong>自动同步</strong>：修改 Obsidian 笔记后，Hexo 博客内容也会随之更新。</li>
+<li><strong>管理简便</strong>：不影响 Obsidian 的笔记存储结构，同时 Hexo 能正常读取文件。</li>
+</ul>
+<hr>
+<h2 id="二、需求场景"><a href="#二、需求场景" class="headerlink" title="二、需求场景"></a><strong>二、需求场景</strong></h2><p>假设你的博客目录和 Obsidian 笔记存放路径如下：</p>
+<ul>
+<li><strong>Hexo 博客目录</strong>：<code>D:\users\Blog\source\_posts</code></li>
+<li><strong>Obsidian 笔记路径</strong>：<code>C:\Users\Easton\Desktop\Obsidian\存档\0.x后端\0、1java入门学习\java笔记.md</code></li>
+</ul>
+<p>目标是让 <code>java笔记.md</code> <strong>自动出现在 Hexo 博客的 <code>_posts</code> 目录下</strong>，无需手动复制。</p>
+<hr>
+<h2 id="三、在-Windows-上创建软链接"><a href="#三、在-Windows-上创建软链接" class="headerlink" title="三、在 Windows 上创建软链接"></a><strong>三、在 Windows 上创建软链接</strong></h2><h3 id="1-以管理员身份打开命令提示符"><a href="#1-以管理员身份打开命令提示符" class="headerlink" title="1. 以管理员身份打开命令提示符"></a><strong>1. 以管理员身份打开命令提示符</strong></h3><p>在 Windows 搜索栏输入 <code>cmd</code>，右键点击 <strong>命令提示符</strong>，选择 **”以管理员身份运行”**。</p>
+<h3 id="2-创建软链接"><a href="#2-创建软链接" class="headerlink" title="2. 创建软链接"></a><strong>2. 创建软链接</strong></h3><p>在命令行中输入：</p>
+<pre class="line-numbers language-none"><code class="language-none">mklink "D:\users\Blog\source\_posts\java笔记.md" "C:\Users\Easton\Desktop\Obsidian\存档\0.x后端\0、1java入门学习\java笔记.md"<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<p>然后我们就可以在文本中手动插入html代码实现红色的下划线了</p>
-<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span> <span class="token attr-value"><span class="token punctuation attr-equals">=</span> <span class="token punctuation">"</span>underline_1<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>文本内容<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h4 id="命令说明"><a href="#命令说明" class="headerlink" title="命令说明"></a><strong>命令说明</strong></h4><ul>
+<li><code>mklink "目标路径" "源文件路径"</code>：创建指向源文件的软链接。</li>
+<li><code>"D:\users\Blog\source\_posts\java笔记.md"</code> 是 Hexo 需要的博客文件路径。</li>
+<li><code>"C:\Users\Easton\Desktop\Obsidian\存档\0.x后端\0、1java入门学习\java笔记.md"</code> 是 Obsidian 笔记的真实存储位置。</li>
+</ul>
+<p>如果希望链接整个目录，而不仅仅是单个文件，可以使用 <code>/D</code> 参数：</p>
+<pre class="line-numbers language-none"><code class="language-none">mklink /D "D:\users\Blog\source\_posts\后端笔记" "C:\Users\Easton\Desktop\Obsidian\存档\0.x后端"<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>这样，<code>0.x后端</code> 目录中的所有笔记都会同步到博客的 <code>_posts</code> 目录。</p>
+<h2 id="四、验证软链接是否成功"><a href="#四、验证软链接是否成功" class="headerlink" title="四、验证软链接是否成功"></a><strong>四、验证软链接是否成功</strong></h2><p>可以运行以下命令：</p>
+<pre class="line-numbers language-none"><code class="language-none">dir D:\users\Blog\source\_posts<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>如果创建成功，会看到类似的输出：</p>
+<pre class="line-numbers language-none"><code class="language-none">2024/01/31  10:00    &lt;SYMLINK&gt;      java笔记.md [C:\Users\Easton\Desktop\Obsidian\存档\0.x后端\0、1java入门学习\java笔记.md]<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>其中 <code>&lt;SYMLINK&gt;</code> 说明 <code>java笔记.md</code> 是一个软链接，而不是实际文件。</p>
+<h2 id="五、运行-Hexo-生成博客"><a href="#五、运行-Hexo-生成博客" class="headerlink" title="五、运行 Hexo 生成博客"></a><strong>五、运行 Hexo 生成博客</strong></h2><p>软链接创建成功后，可以像往常一样运行 Hexo：</p>
+<pre class="line-numbers language-none"><code class="language-none">hexo clean
+hexo g -d<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
+<p>这样，Hexo 会自动读取 Obsidian 笔记，并将其部署到博客中。</p>
+<hr>
+<h2 id="六、删除软链接"><a href="#六、删除软链接" class="headerlink" title="六、删除软链接"></a><strong>六、删除软链接</strong></h2><p>如果想删除软链接，但保留原始笔记：</p>
+<pre class="line-numbers language-none"><code class="language-none">del "D:\users\Blog\source\_posts\java笔记.md"<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<h4 id="创建一个模板文件-template1-md"><a href="#创建一个模板文件-template1-md" class="headerlink" title="创建一个模板文件 template1.md"></a>创建一个模板文件 template1.md</h4><pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span> <span class="token attr-value"><span class="token punctuation attr-equals">=</span> <span class="token punctuation">"</span>t6999_14<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>&lt;% tp.file.selection() %&gt;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>其中<code>&lt;% tp.file.selection() %&gt;</code> 是 Templater 的占位符，会将当前选中的文本放入模板中。如果没有选中任何内容，则会插入空的 <code>&lt;span&gt;</code>。</p>
-<blockquote>
-<p>[!NOTE] 注意<br>如果该模板文件路径在某一个仓库目录下面，那么在其他仓库中是没法使用的</p>
-</blockquote>
-<h4 id="将模板与热键绑定"><a href="#将模板与热键绑定" class="headerlink" title="将模板与热键绑定"></a>将模板与热键绑定</h4><p>在插件中找到该处，先设置模板文件的路径<br><img src="https://fastly.jsdelivr.net/gh/easton119/oss/test111/20250124222854.png" alt="image.png"><br>再点击右边加号，选择Insert行键入快捷键 ，比如Ctrl+W</p>
-<p><img src="https://fastly.jsdelivr.net/gh/easton119/oss/test111/20250124223017.png" alt="image.png"><br>然后选中文字后ctrl+w即可<br><img src="https://fastly.jsdelivr.net/gh/easton119/oss/test111/20250124223233.png" alt="image.png"></p>
-<blockquote>
-<p>然后根据自己需要的样式修改css就行了</p>
-</blockquote>
-<h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><p>然而，经过测试，很容易发现这样插入模板中的html代码会出现问题，会改变原来的html格式。</p>
-<p>打开开发者工具（ctrl+shift+i）,可以看见会在span标签外面再套上div代码块，造成多余的换行。</p>
-<p><img src="https://fastly.jsdelivr.net/gh/easton119/oss/test111/image-20250125110424336.png" alt="image-20250125110424336"></p>
-<p>这个是templater插件渲染的问题，修改起来太麻烦了。</p>
-<h3 id="更方便和完善的方案"><a href="#更方便和完善的方案" class="headerlink" title="更方便和完善的方案"></a>更方便和完善的方案</h3><p>使用<strong>underline</strong>插件，对underline插件提供的样式进行修改。</p>
-<p>打开underline插件的main.js文件，在其中找到</p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token operator">...</span>
-<span class="token class-name">Underline</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">wrapper</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">editor<span class="token punctuation">,</span> view<span class="token punctuation">,</span> prefix<span class="token punctuation">,</span> suffix</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">if</span> <span class="token punctuation">(</span>prefix <span class="token operator">===</span> <span class="token keyword">void</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> prefix <span class="token operator">=</span> <span class="token string">"&lt;u&gt;"</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
-    <span class="token keyword">if</span> <span class="token punctuation">(</span>suffix <span class="token operator">===</span> <span class="token keyword">void</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> suffix <span class="token operator">=</span> <span class="token string">"&lt;/u&gt;"</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
-    <span class="token operator">...</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>如果是删除 <strong>文件夹软链接</strong>：</p>
+<pre class="line-numbers language-none"><code class="language-none">rmdir "D:\users\Blog\source\_posts\后端笔记"<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<p>修改为：</p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">if</span> <span class="token punctuation">(</span>prefix <span class="token operator">===</span> <span class="token keyword">void</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> prefix <span class="token operator">=</span> <span class="token string">'&lt;span class="underline_1"&gt;'</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
-<span class="token keyword">if</span> <span class="token punctuation">(</span>suffix <span class="token operator">===</span> <span class="token keyword">void</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> suffix <span class="token operator">=</span> <span class="token string">"&lt;/span&gt;"</span><span class="token punctuation">;</span> <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
-<p>重启obsidian，成功</p>
+<h2 id="七、软链接与复制文件的对比"><a href="#七、软链接与复制文件的对比" class="headerlink" title="七、软链接与复制文件的对比"></a><strong>七、软链接与复制文件的对比</strong></h2><table>
+<thead>
+<tr>
+<th>方式</th>
+<th>优点</th>
+<th>缺点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>软链接</strong></td>
+<td>自动同步，节省空间，不占用额外存储</td>
+<td>需要手动创建链接</td>
+</tr>
+<tr>
+<td><strong>复制文件</strong></td>
+<td>操作简单，不影响原文件</td>
+<td>需要定期手动更新笔记</td>
+</tr>
+</tbody></table>
+<p>如果希望博客内容能够随着 Obsidian 笔记的更新而自动同步，使用 <strong>软链接</strong> 是更高效的选择。</p>
+<hr>
+<h2 id="八、总结"><a href="#八、总结" class="headerlink" title="八、总结"></a><strong>八、总结</strong></h2><ul>
+<li>软链接可以 <strong>让 Obsidian 笔记自动同步到 Hexo 博客</strong>，避免手动复制。</li>
+<li>可以选择<strong>单个文件</strong>或者<strong>整个文件夹</strong>进行软链接，操作灵活。</li>
+<li>创建后，Hexo 可以像处理普通 Markdown 文件一样解析笔记内容。</li>
+<li>适用于希望长期维护 Hexo 博客，同时使用 Obsidian 记录学习笔记的用户。</li>
+</ul>
+<p>这种方法能有效减少手动操作，提高笔记管理的效率。</p>
 ]]></content>
       <categories>
         <category>工作流搭建</category>
+        <category>博客</category>
       </categories>
       <tags>
+        <tag>Hexo</tag>
         <tag>Obsidian</tag>
       </tags>
   </entry>
