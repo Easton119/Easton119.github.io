@@ -42,6 +42,34 @@
   </entry>
   
   <entry>
+    <title>Java笔记</title>
+    <link href="https://easton119.github.io/2025/01/20/java-bi-ji-hsp/"/>
+    <id>https://easton119.github.io/2025/01/20/java-bi-ji-hsp/</id>
+    <published>2025-01-19T16:00:00.000Z</published>
+    <updated>2025-01-31T03:57:43.715Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;本文根据韩顺平老师的java课程整理而来&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;重点：&lt;br&gt;接口，内部类&lt;br&gt;String , StringBuffer , StringBuilder&lt;br&gt;输出流输入流&lt;br&gt;java8</summary>
+        
+      
+    
+    
+    
+    <category term="Java" scheme="https://easton119.github.io/categories/Java/"/>
+    
+    
+    <category term="Java" scheme="https://easton119.github.io/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
     <title>hexo博客搭建与github+PicGo图床设置</title>
     <link href="https://easton119.github.io/2024/12/24/bo-ke-da-jian-yu-tu-chuang-she-zhi/"/>
     <id>https://easton119.github.io/2024/12/24/bo-ke-da-jian-yu-tu-chuang-she-zhi/</id>
