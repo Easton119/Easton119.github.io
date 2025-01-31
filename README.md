@@ -1,5 +1,5 @@
 # vuepress-Blog
-基于VuePress-theme-Plume搭建的个人博客
+基于VuePress-theme-Plume主题搭建的个人博客
 
 
 ## Documents
