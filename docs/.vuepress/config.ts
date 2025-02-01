@@ -44,6 +44,25 @@ export default defineUserConfig({
     //   postCover: 'right', // 文章封面位置
     //   pagination: 15, // 每页显示文章数量
     // },
+    blog: {
+      /**
+       * 通过 glob string 配置包含文件，
+       * 默认读取 源目录中的所有 `.md` 文件，但会排除 `notes` 配置中用于笔记的目录。
+       */
+      include: ['**/*.md'],
+      // 如果希望只将源目录下某个目录下的文章读取为博客文章，比如 `blog` 目录，可以配置为：
+      // include: ['blog/**/*.md'],
+
+      /**
+       * 通过 glob string 配置排除的文件，相对于 源目录
+       */
+      exclude: ['.vuepress/', '**/README.md'],
+
+      // 禁用分页
+      // pagination: false,
+      // 每页显示的文章数量
+      pagination: 15,
+    }
 
     /* 博客文章页面链接前缀 */
     article: '/article/',
