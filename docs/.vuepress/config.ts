@@ -62,7 +62,7 @@ export default defineUserConfig({
       // pagination: false,
       // 每页显示的文章数量
       pagination: 15,
-    }
+    },
 
     /* 博客文章页面链接前缀 */
     article: '/article/',
