@@ -1,6 +1,5 @@
 ---
 title: 使用软链接自动同步 Obsidian 笔记到 Hexo 博客
-# date: 2025-01-31
 createTime: 2024/11/31
 tags:
   - Obsidian
@@ -8,6 +7,7 @@ tags:
 categories:
   - 工作流搭建
   - 博客
+permalink: /article/yxz5z1ts/
 ---
 在日常学习和工作中，许多人使用 **Obsidian** 记录笔记，同时用 **Hexo + GitHub Pages** 搭建个人博客。如果希望将 Obsidian 中的部分笔记同步到 Hexo，而不想手动复制文件，可以使用 **软链接（Symbolic Link）** 进行自动管理。
 

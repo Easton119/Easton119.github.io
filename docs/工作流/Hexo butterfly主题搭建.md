@@ -1,12 +1,12 @@
 ---
 title: Hexo butterfly主题博客搭建
-# date: 2024-03-10 13:53:25
 createTime: 2024/03/10
 tags:
   - Hexo
 categories:
   - 工作流搭建
   - 博客
+permalink: /article/5qqn8v0v/
 ---
 
 

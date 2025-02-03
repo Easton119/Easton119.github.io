@@ -1,6 +1,6 @@
 ---
 title: VuePress-theme-Plume搭建博客踩坑记录（持续更新）
-date: 2025-01-31
+createTime: 2025/01/30
 tags:
   - VuePress
 categories:
@@ -22,14 +22,16 @@ categories:
 |            |           |         |
 
 >[!important]
-   参考文档：[安装/使用 | Plume 主题](https://theme-plume.vuejs.press/guide/quick-start/)
+>参考文档：[安装/使用 | Plume 主题](https://theme-plume.vuejs.press/guide/quick-start/)
+>
 >Action构建失败原因： [Action failed with "The process '/usr/bin/git' failed with exit code 128" - Stack Overflow](https://stackoverflow.com/questions/76023778/action-failed-with-the-process-usr-bin-git-failed-with-exit-code-128)
 
 
 
 命令行`npm run docs:dev` 运行
 
-以下记录从新手角度通过命令行安装plume后的调整过程与注意点~~（踩坑过程）~~
+以下记录从新手角度通过命令行安装plume后的调整过程与注意点~~（踩坑过程）~~.
+
 
 1.环境配置
 注意node，npm的版本。
@@ -44,7 +46,6 @@ items: [
 ]
 ``````
 去掉示例中link中的`notes`~~（因为感觉没有什么用）~~
-
 
 3.设置
 在navbar.ts , notes.ts 中
@@ -71,3 +72,19 @@ Settings > Action > General > Workflow Permissions
 
 ![image.png](https://fastly.jsdelivr.net/gh/easton119/oss/test111/20250201130830.png)
 
+
+
+5.markdown效果
+博客效果跟在markdown编辑器上展示的效果有出入。
+例如，写引用时
+```
+>[!important]
+>参考文档：[安装/使用 | Plume 主题](https://theme-plume.vuejs.press/guide/quick-start/)
+>
+>Action构建失败原因： [Action failed with "The process '/usr/bin/git' failed with exit code 128" - Stack Overflow](https://stackoverflow.com/questions/76023778/action-failed-with-the-process-usr-bin-git-failed-with-exit-code-128)
+```
+
+需要每一段开头都加上`>`, 如果需要换行，那么要多一行`>`
+
+
+![image.png](https://fastly.jsdelivr.net/gh/easton119/oss/test111/20250203105637.png)

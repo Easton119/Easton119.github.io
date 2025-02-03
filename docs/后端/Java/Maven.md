@@ -2,10 +2,11 @@
 title: Maven
 createTime: 2023/12/02
 tags:
- - Maven
+  - Maven
 categories:
- - 后端
- - Java
+  - 后端
+  - Java
+permalink: /article/ky3tf11a/
 ---
 
 仓库：本地仓库，远程仓库（私服），中央仓库

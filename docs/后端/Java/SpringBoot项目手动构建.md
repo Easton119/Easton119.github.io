@@ -2,10 +2,11 @@
 title: springboot项目手动构建
 createTime: 2023/12/02
 categories:
- - 后端
- - Java
+  - 后端
+  - Java
 tags:
- - Java
+  - Java
+permalink: /article/o043t3kl/
 ---
 
 # SpringBoot项目-手动构建
