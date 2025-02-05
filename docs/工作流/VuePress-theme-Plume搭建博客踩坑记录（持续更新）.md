@@ -6,6 +6,8 @@ tags:
 categories:
   - 工作流搭建
   - 博客
+permalink: /article/qs7uj7ts/
+outline: deep
 ---
 >之前博客是基于Hexo搭建，这篇是基于VuePress搭建
 
@@ -30,14 +32,14 @@ categories:
 
 命令行`npm run docs:dev` 运行
 
-以下记录从新手角度通过命令行安装plume后的调整过程与注意点~~（踩坑过程）~~.
+以下记录从新手角度通过命令行安装plume后的调整过程与注意点 ~~(踩坑过程)~~
 
 
-1.环境配置
+### 1.环境配置
 注意node，npm的版本。
 个人使用node v22.13.1 , npm 10.9.2
 
-2.在navbar.ts中
+### 2.在navbar.ts中
 
 ``````
 items: [
@@ -47,13 +49,13 @@ items: [
 ``````
 去掉示例中link中的`notes`~~（因为感觉没有什么用）~~
 
-3.设置
+### 3.设置
 在navbar.ts , notes.ts 中
 dir 是 物理路径名字
 link 是 链接名字
 
 
-4.部署
+### 4.部署
 
 通过Github Pages进行部署，
 首先我的博客网址是在 `https://<username>.github.io/<reponame>`
@@ -74,7 +76,7 @@ Settings > Action > General > Workflow Permissions
 
 
 
-5.markdown效果
+### 5.markdown效果
 博客效果跟在markdown编辑器上展示的效果有出入。
 例如，写引用时
 ```
@@ -88,3 +90,5 @@ Settings > Action > General > Workflow Permissions
 
 
 ![image.png](https://fastly.jsdelivr.net/gh/easton119/oss/test111/20250203105637.png)
+
+使用删除线时，在外边缘加上空格

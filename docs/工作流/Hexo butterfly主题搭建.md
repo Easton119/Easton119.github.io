@@ -7,6 +7,7 @@ categories:
   - 工作流搭建
   - 博客
 permalink: /article/5qqn8v0v/
+outline: deep
 ---
 
 
