@@ -31,5 +31,6 @@ config:
         title: ChatCluster
         icon: 🚀
         details: 高性能集群聊天服务器
+        link: https://github.com/Easton119/ChatCluster
       
 ---
