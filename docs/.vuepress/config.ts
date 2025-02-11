@@ -3,7 +3,7 @@ import { defineUserConfig } from 'vuepress'
 import { plumeTheme } from 'vuepress-theme-plume'
 
 export default defineUserConfig({
-  base: '/vuepress-Blog/',
+  base: '',
   lang: 'zh-CN',
   title: 'Easton的博客',//这是网站的标题
   description: '工作与学习记录',
