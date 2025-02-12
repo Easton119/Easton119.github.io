@@ -32,5 +32,10 @@ config:
         icon: 🚀
         details: 高性能集群聊天服务器
         link: https://github.com/Easton119/ChatCluster
+      -
+        title: ConnectionPool
+        icon: 📜
+        details: 基于生产者消费者线程模型实现连接池
+        link: https://github.com/Easton119/ConnectionPool
       
 ---

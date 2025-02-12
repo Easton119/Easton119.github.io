@@ -9,11 +9,7 @@ const demoNote = defineNoteConfig({
 const studyNote = defineNoteConfig({
   dir: '开发学习',
   link: '/study',
-  sidebar: [
-    { text: '学习笔记首页', link: '/study/' }, // 首页
-    { text: '课程介绍', link: '/study/introduce/' }, 
-    { text: '进阶指南', link: '/study/guide/' },
-  ],
+  sidebar: ['','介绍','智能指针']
 })
 
 export const notes = defineNotesConfig({
