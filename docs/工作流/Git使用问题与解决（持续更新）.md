@@ -9,8 +9,8 @@ outline: deep
 >Linux环境：Ubuntu 22.04.2 LTS
 ### 1、linux下连不上Git
 
-#### 临时解决方案：
-临时解决方案 - 修改hosts文件：尝试在系统的hosts文件中添加以下条目来映射GitHub的IP地址：
+#### 临时解决方案-修改修改hosts文件：
+尝试在系统的hosts文件中添加以下条目来映射GitHub的IP地址：
 
 `sudo vim /etc/hosts`
 
@@ -22,6 +22,21 @@ outline: deep
 #### 其他方案：
 + 安装clash等vpn
 + 使用SSH
+
+#### 使用校园网时git被屏蔽
+
+ping github.com 能ping通
+telnet github.com 443 失败，说明 443 端口被拦截（学校的网络可能屏蔽了 GitHub），
+通过切换DNS解决：
+`sudo vim /etc/resolv.conf`
+添加：
+`nameserver 8.8.8.8`
+`nameserver 8.8.4.4`
+
+然后运行：`sudo systemctl restart NetworkManager`
+
+然后git push 成功！
+
 
 ### 2、获取最新的Git版本
 Ubuntu 官方软件源的 Git 版本通常较旧，因此推荐使用 Git 官方维护的 **PPA 源** 来安装最新版本：
