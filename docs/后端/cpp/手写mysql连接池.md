@@ -8,14 +8,14 @@ tags:
 categories:
   - 后端
   - C++
-permalink: 
+permalink: /article/y9hglhfc/
 outline: deep
 ---
 ### 关键技术点
 MySQL数据库编程、单例模式、queue队列容器、C++11多线程编程、线程互斥、线程同步通信和 unique_lock、基于CAS的原子整形、智能指针shared_ptr、lambda表达式、生产者-消费者线程模型
->语言层面实现以上技术，所以可以跨平台
+>语言层面实现以上技术，所以可以跨平台。
 
-关于MySQL数据库（基于C/S设计）
+关于MySQL数据库（基于C/S设计）：  
 每次连接时四次耗费性能的操作：tcp三次握手，四次挥手 ，mysql server连接认证，关闭连接回收资源
 
 ### 通用基础功能
@@ -60,6 +60,13 @@ ConnectionPool* ConnectionPool::getConnectionPool(){
 }
 ```
 
+分析：
+该函数 `getConnectionPool()` 作为 `ConnectionPool` 类的静态成员函数（`static`），可以在没有实例对象的情况下调用。
+
+关键点：
+1. 局部静态变量（Local Static Variable）：函数内的 static 变量在程序第一次调用该函数时初始化，并在整个程序生命周期内存续。
+2. C++11 及之后的标准规定：局部静态变量的初始化是线程安全的（由编译器自动加锁保证）
+	如果多个线程同时调用 getConnectionPool()，只有一个线程会执行初始化，其他线程会等待该初始化完成。
 
 #### 生产者线程
 一个单独线程
@@ -145,7 +152,7 @@ shared_ptr<Connection> ConnectionPool::getConnection(){
 }
 ```
 
-注意使用shared_ptr, 不适用weak_ptr
+<span style="background:#ecd5d5">注意使用shared_ptr, 不使用weak_ptr</span>
 - `weak_ptr` 不能直接使用，必须转换成 `shared_ptr`，但如果资源已释放，则转换失败。
 - `weak_ptr` 不能自定义删除行为，无法自动归还连接池。
 
