@@ -9,7 +9,7 @@ const demoNote = defineNoteConfig({
 const studyNote = defineNoteConfig({
   dir: '开发学习',
   link: '/study',
-  sidebar: ['','介绍','智能指针']
+  sidebar: ['','介绍','cpp语法图']
 })
 
 export const notes = defineNotesConfig({
