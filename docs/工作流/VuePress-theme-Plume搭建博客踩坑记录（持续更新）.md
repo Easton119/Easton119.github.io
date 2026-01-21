@@ -30,7 +30,8 @@ outline: deep
 
 
 
-命令行`npm run docs:dev` 运行
+通过本地cmd的命令行`npm run docs:dev` 运行，可以在localhost查看当前效果。
+通过git上传，可以更新远程网站效果。
 
 以下记录从新手角度通过命令行安装plume后的调整过程与注意点 ~~(踩坑过程)~~
 
