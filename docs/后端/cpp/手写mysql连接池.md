@@ -114,7 +114,7 @@ void ConnectionPool::produceConnectionTask(){
 - `std::unique_lock<std::mutex> lock(mtx);` **构造时自动加锁**。
 - 作用域结束时 **自动解锁**（RAII 机制）。
 
-[关于条件变量condition_variable的wait , wait_for](../../0.2cards/cpp语法点/条件变量condition_variable.md)
+[关于条件变量condition_variable的wait , wait_for](../../../0.2cards/cpp语法点/条件变量condition_variable.md)
 #### 消费者线程
 非单独线程
 ```cpp
