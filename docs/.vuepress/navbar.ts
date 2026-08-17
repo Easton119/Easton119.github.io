@@ -10,7 +10,7 @@ export const navbar = defineNavbarConfig([
     items: [
       { text: '示例', link: '/demo/README.md' },
       { text: 'cpp学习复盘', link: '/study/README.md' },
-      
+      { text: 'AI编译器', link: '/aicompiler/README.md' },
     ]
   },
 ])

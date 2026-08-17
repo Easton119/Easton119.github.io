@@ -1,9 +1,8 @@
 ---
 title: 使用Templater在Obsidian中进行html代码块插入与underline插件
-createTime: 2024/12/24
+createTime: 2025/04/24 13:09:16
 categories:
-  - 工作流搭建
-  - 博客
+  - 工作流
 tags:
   - Obsidian
 permalink: /article/0fltmyy4/

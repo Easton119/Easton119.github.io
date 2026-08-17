@@ -1,11 +1,11 @@
 ---
 title: 使用软链接和硬链接同步Obsidian笔记到博客内容
-createTime: 2024/11/31
+createTime: 2025/04/24 13:09:16
 tags:
   - Obsidian
-categories:
-  - 工作流搭建
   - 博客
+categories:
+  - 工作流
 permalink: /article/yxz5z1ts/
 ---
 

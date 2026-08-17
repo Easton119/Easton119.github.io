@@ -1,11 +1,10 @@
 ---
 title: Obsidian构建(持续更新)
-createTime: 2025/01/17
+createTime: 2025/04/24 13:09:16
 tags:
-  - 博客
-categories:
-  - 工作流搭建
   - Obsidian
+categories:
+  - 工作流
 permalink: /article/uk1p59hi/
 outline: deep
 ---

@@ -56,7 +56,7 @@ export default defineUserConfig({
       /**
        * 通过 glob string 配置排除的文件，相对于 源目录
        */
-      exclude: ['.vuepress/', '**/README.md'],
+      exclude: ['.vuepress/', '**/README.md', '其他设置/**', 'preview/**'],
 
       // 禁用分页
       // pagination: false,
@@ -88,13 +88,10 @@ export default defineUserConfig({
        * Shiki 代码高亮
        * @see https://theme-plume.vuejs.press/config/plugins/code-highlight/
        */
-      // shiki: {
-      //   // 强烈建议预设代码块高亮语言，插件默认加载所有语言会产生不必要的时间开销
-      //   languages: ['shell', 'bash', 'typescript', 'javascript'],
-      //   twoslash: true, // 启用 twoslash
-      //   whitespace: true, // 启用 空格/Tab 高亮
-      //   lineNumbers: true, // 启用行号
-      // },
+      shiki: {
+        // 预设代码块高亮语言，避免加载所有语言造成不必要的时间开销
+        languages: ['shell', 'bash', 'typescript', 'javascript', 'js', 'ts', 'html', 'css', 'python', 'yml', 'c', 'cpp', 'go', 'java', 'xml', 'yaml', 'properties', 'json'],
+      },
 
       /* 本地搜索, 默认启用 */
       // search: true,

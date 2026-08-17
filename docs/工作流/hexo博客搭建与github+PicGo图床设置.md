@@ -1,13 +1,12 @@
 ---
 title: hexo博客搭建与github+PicGo图床设置
-createTime: 2024/10/24
+createTime: 2025/04/24 13:09:16
 tags:
   - 图床
   - Hexo
   - 博客
 categories:
-  - 工作流搭建
-  - 博客
+  - 工作流
 permalink: /article/dp8emtf9/
 ---
 

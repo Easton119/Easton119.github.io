@@ -12,9 +12,15 @@ const studyNote = defineNoteConfig({
   sidebar: ['','cpp语法图']
 })
 
+const aiCompilerNote = defineNoteConfig({
+  dir: 'AI编译器',
+  link: '/aicompiler',
+  sidebar: ['', '基础概念', '传统编译器', 'AI编译器'],
+})
+
 export const notes = defineNotesConfig({
   dir: 'notes',
   link: '/',
-  notes: [demoNote,studyNote],
+  notes: [demoNote,studyNote,aiCompilerNote],
 })
 

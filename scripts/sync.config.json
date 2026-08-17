@@ -1,0 +1,17 @@
+{
+  "$comment": "主库→博客 单向正文同步映射。main: 主库文件绝对路径；blog: 博客文件相对 docs/ 的路径。新增文章时在此手动加一行。",
+  "mappings": [
+    {
+      "main": "D:/Documents/Obsidian/归档/0.x后端/0、1java入门学习/java笔记-hsp.md",
+      "blog": "后端/Java/Java笔记-hsp.md"
+    },
+    {
+      "main": "D:/Documents/Obsidian/0.3学习/3 C&C++学习/手写连接池/mysql连接池.md",
+      "blog": "后端/cpp/手写mysql连接池.md"
+    },
+    {
+      "main": "D:/Documents/Obsidian/归档/0.x后端/JavaWeb/SpringBoot项目手动构建.md",
+      "blog": "后端/Java/SpringBoot项目手动构建.md"
+    }
+  ]
+}

@@ -1,11 +1,11 @@
 ---
-title: VuePress-theme-Plume搭建博客踩坑记录（持续更新）
-createTime: 2025/01/30
+title: VuePress-theme-Plume搭建博客踩坑记录
+createTime: 2025/04/24 13:09:16
 tags:
   - VuePress
-categories:
-  - 工作流搭建
   - 博客
+categories:
+  - 工作流
 permalink: /article/qs7uj7ts/
 outline: deep
 ---
