@@ -8,7 +8,7 @@ config:
     
     hero:
       name: Easton's Blog
-      tagline: Backend Developer
+      tagline: Developer
       text: Embrace the storm, for it brings the winds of change
       actions:
         -
@@ -23,10 +23,10 @@ config:
     type: features
     features:
       - 
-        title: C++语法笔记
+        title: vlm-rk3588
         icon: 📖
-        details: C++基础语法及现代特性
-        link: https://github.com/Easton119/Base
+        details: 基于rk3588的端侧多模态视觉问答
+        link: https://github.com/Easton119/vlm-rk3588
       -
         title: ChatCluster
         icon: 🚀
